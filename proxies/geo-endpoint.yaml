@@ -1,33 +1,25 @@
 proxies:
-  - name: "[🌍] 🇳🇱 Нидерланды"    
-    <<: *warp-common
+  - name: "[🌍] 🇳🇱 Нидерланды"
     server: nl.tribukvy.ltd
     port: 4500
-  - name: "[🌍] 🇵🇱 Польша"    
-    <<: *warp-common
+  - name: "[🌍] 🇵🇱 Польша"
     server: pl.tribukvy.ltd
     port: 4500
-  - name: "[🌍] 🇷🇺 Россия"    
-    <<: *warp-common
+  - name: "[🌍] 🇷🇺 Россия"
     server: ru0.tribukvy.ltd
     port: 4500
-  - name: "[🌍] 🇫🇮 Финляндия"    
-    <<: *warp-common
+  - name: "[🌍] 🇫🇮 Финляндия"
     server: fi.tribukvy.ltd
     port: 4500
-  - name: "[🌍] 🇩🇪 Германия"    
-    <<: *warp-common
+  - name: "[🌍] 🇩🇪 Германия"
     server: de.tribukvy.ltd
     port: 4500
-  - name: "[🌍] 🇱🇻 Латвия"    
-    <<: *warp-common
+  - name: "[🌍] 🇱🇻 Латвия"
     server: lv.tribukvy.ltd
     port: 4500
-  - name: "[🌍] LTE 🇵🇱 Польша"    
-    <<: *warp-common
+  - name: "[🌍] LTE 🇵🇱 Польша"
     server: mpl.tribukvy.ltd
     port: 4500
-  - name: "[🌍] LTE 🇫🇮 Финляндия"    
-    <<: *warp-common
+  - name: "[🌍] LTE 🇫🇮 Финляндия"
     server: mfi.tribukvy.ltd
     port: 4500
