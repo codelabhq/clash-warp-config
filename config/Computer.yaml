@@ -25,22 +25,589 @@ x-default-interval: &default-interval 86400
 x-check-interval: &check-interval 300
 x-health-url: &health-url http://speed.cloudflare.com/
 
-proxy-providers:
-  geo-endpoint:
-    type: http
-    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/refs/heads/main/proxies/geo-endpoint.yaml
-    path: ./provider/geo-endpoint.yaml
-    interval: *default-interval
-  origin-endpoint:
-    type: http
-    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/refs/heads/main/proxies/origin-endpoint.yaml
-    path: ./provider/origin-endpoint.yaml
-    interval: *default-interval
-  default-endpoint:
-    type: http
-    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/refs/heads/main/proxies/default-endpoint.yaml
-    path: ./provider/default-endpoint.yaml
-    interval: *default-interval
+# warp-types: geo origin default
+proxies:
+# === BEGIN WARP PROXIES (auto-generated from proxies/*.yaml — do not edit) ===
+  # ── geo-endpoint ──
+  - name: "[🌍] 🇳🇱 Нидерланды"
+    <<: *warp-common
+    server: nl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇵🇱 Польша"
+    <<: *warp-common
+    server: pl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇷🇺 Россия"
+    <<: *warp-common
+    server: ru0.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇫🇮 Финляндия"
+    <<: *warp-common
+    server: fi.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇩🇪 Германия"
+    <<: *warp-common
+    server: de.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇱🇻 Латвия"
+    <<: *warp-common
+    server: lv.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] LTE 🇵🇱 Польша"
+    <<: *warp-common
+    server: mpl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] LTE 🇫🇮 Финляндия"
+    <<: *warp-common
+    server: mfi.tribukvy.ltd
+    port: 4500
+  # ── origin-endpoint ──
+  - name: "[⭐] engage.cloudflareclient.com:4500"
+    <<: *warp-common
+    server: engage.cloudflareclient.com
+    port: 4500
+  - name: "[⭐] engage.cloudflareclient.com:500"
+    <<: *warp-common
+    server: engage.cloudflareclient.com
+    port: 500
+  - name: "[⭐] engage.cloudflareclient.com:2408"
+    <<: *warp-common
+    server: engage.cloudflareclient.com
+    port: 2408
+  - name: "[⭐] 162.159.192.1:4500"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 500
+  - name: "[⭐] 162.159.192.1:500"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 500
+  - name: "[⭐] 162.159.192.1:2408"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 2408
+  - name: "[⭐] 8.6.112.1:4500"
+    <<: *warp-common
+    server: 8.6.112.1
+    port: 4500
+  - name: "[⭐] 8.34.70.1:500"
+    <<: *warp-common
+    server: 8.34.70.1
+    port: 500
+  - name: "[⭐] 8.34.146.1:2408"
+    <<: *warp-common
+    server: 8.34.146.1
+    port: 2408
+  - name: "[⭐] 8.35.211.1:4500"
+    <<: *warp-common
+    server: 8.35.211.1
+    port: 4500
+  - name: "[⭐] 8.39.125.1:500"
+    <<: *warp-common
+    server: 8.39.125.1
+    port: 500
+  - name: "[⭐] 8.39.204.1:2408"
+    <<: *warp-common
+    server: 8.39.204.1
+    port: 2408
+  - name: "[⭐] 8.39.214.1:4500"
+    <<: *warp-common
+    server: 8.39.214.1
+    port: 4500
+  - name: "[⭐] 8.47.69.1:500"
+    <<: *warp-common
+    server: 8.47.69.1
+    port: 500
+  - name: "[⭐] 188.114.96.1:2408"
+    <<: *warp-common
+    server: 188.114.96.1
+    port: 2408
+  - name: "[⭐] 188.114.97.1:4500"
+    <<: *warp-common
+    server: 188.114.97.1
+    port: 4500
+  - name: "[⭐] 188.114.98.1:500"
+    <<: *warp-common
+    server: 188.114.98.1
+    port: 500
+  # ── default-endpoint ──
+  - name: "[☁️] 162.159.192.1:2408"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 2408
+  - name: "[☁️] 162.159.192.1:1701"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 1701
+  - name: "[☁️] 162.159.192.1:4500"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 4500
+  - name: "[☁️] 162.159.192.1:500"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 500
+  - name: "[☁️] 162.159.192.2:2408"
+    <<: *warp-common
+    server: 162.159.192.2
+    port: 2408
+  - name: "[☁️] 162.159.192.2:1701"
+    <<: *warp-common
+    server: 162.159.192.2
+    port: 1701
+  - name: "[☁️] 162.159.192.2:4500"
+    <<: *warp-common
+    server: 162.159.192.2
+    port: 4500
+  - name: "[☁️] 162.159.192.2:500"
+    <<: *warp-common
+    server: 162.159.192.2
+    port: 500
+  - name: "[☁️] 162.159.192.3:2408"
+    <<: *warp-common
+    server: 162.159.192.3
+    port: 2408
+  - name: "[☁️] 162.159.192.3:1701"
+    <<: *warp-common
+    server: 162.159.192.3
+    port: 1701
+  - name: "[☁️] 162.159.192.3:4500"
+    <<: *warp-common
+    server: 162.159.192.3
+    port: 4500
+  - name: "[☁️] 162.159.192.3:500"
+    <<: *warp-common
+    server: 162.159.192.3
+    port: 500
+  - name: "[☁️] 162.159.192.4:2408"
+    <<: *warp-common
+    server: 162.159.192.4
+    port: 2408
+  - name: "[☁️] 162.159.192.4:1701"
+    <<: *warp-common
+    server: 162.159.192.4
+    port: 1701
+  - name: "[☁️] 162.159.192.4:4500"
+    <<: *warp-common
+    server: 162.159.192.4
+    port: 4500
+  - name: "[☁️] 162.159.192.4:500"
+    <<: *warp-common
+    server: 162.159.192.4
+    port: 500
+  - name: "[☁️] 162.159.192.5:2408"
+    <<: *warp-common
+    server: 162.159.192.5
+    port: 2408
+  - name: "[☁️] 162.159.192.5:1701"
+    <<: *warp-common
+    server: 162.159.192.5
+    port: 1701
+  - name: "[☁️] 162.159.192.5:4500"
+    <<: *warp-common
+    server: 162.159.192.5
+    port: 4500
+  - name: "[☁️] 162.159.192.5:500"
+    <<: *warp-common
+    server: 162.159.192.5
+    port: 500
+  - name: "[☁️] 162.159.192.6:2408"
+    <<: *warp-common
+    server: 162.159.192.6
+    port: 2408
+  - name: "[☁️] 162.159.192.6:1701"
+    <<: *warp-common
+    server: 162.159.192.6
+    port: 1701
+  - name: "[☁️] 162.159.192.6:4500"
+    <<: *warp-common
+    server: 162.159.192.6
+    port: 4500
+  - name: "[☁️] 162.159.192.6:500"
+    <<: *warp-common
+    server: 162.159.192.6
+    port: 500
+  - name: "[☁️] 162.159.192.7:2408"
+    <<: *warp-common
+    server: 162.159.192.7
+    port: 2408
+  - name: "[☁️] 162.159.192.7:1701"
+    <<: *warp-common
+    server: 162.159.192.7
+    port: 1701
+  - name: "[☁️] 162.159.192.7:4500"
+    <<: *warp-common
+    server: 162.159.192.7
+    port: 4500
+  - name: "[☁️] 162.159.192.7:500"
+    <<: *warp-common
+    server: 162.159.192.7
+    port: 500
+  - name: "[☁️] 162.159.192.8:2408"
+    <<: *warp-common
+    server: 162.159.192.8
+    port: 2408
+  - name: "[☁️] 162.159.192.8:1701"
+    <<: *warp-common
+    server: 162.159.192.8
+    port: 1701
+  - name: "[☁️] 162.159.192.8:4500"
+    <<: *warp-common
+    server: 162.159.192.8
+    port: 4500
+  - name: "[☁️] 162.159.192.8:500"
+    <<: *warp-common
+    server: 162.159.192.8
+    port: 500
+  - name: "[☁️] 162.159.192.9:2408"
+    <<: *warp-common
+    server: 162.159.192.9
+    port: 2408
+  - name: "[☁️] 162.159.192.9:1701"
+    <<: *warp-common
+    server: 162.159.192.9
+    port: 1701
+  - name: "[☁️] 162.159.192.9:4500"
+    <<: *warp-common
+    server: 162.159.192.9
+    port: 4500
+  - name: "[☁️] 162.159.192.9:500"
+    <<: *warp-common
+    server: 162.159.192.9
+    port: 500
+  - name: "[☁️] 162.159.192.10:2408"
+    <<: *warp-common
+    server: 162.159.192.10
+    port: 2408
+  - name: "[☁️] 162.159.192.10:1701"
+    <<: *warp-common
+    server: 162.159.192.10
+    port: 1701
+  - name: "[☁️] 162.159.192.10:4500"
+    <<: *warp-common
+    server: 162.159.192.10
+    port: 4500
+  - name: "[☁️] 162.159.192.10:500"
+    <<: *warp-common
+    server: 162.159.192.10
+    port: 500
+  - name: "[☁️] 162.159.192.11:2408"
+    <<: *warp-common
+    server: 162.159.192.11
+    port: 2408
+  - name: "[☁️] 162.159.192.11:1701"
+    <<: *warp-common
+    server: 162.159.192.11
+    port: 1701
+  - name: "[☁️] 162.159.192.11:4500"
+    <<: *warp-common
+    server: 162.159.192.11
+    port: 4500
+  - name: "[☁️] 162.159.192.11:500"
+    <<: *warp-common
+    server: 162.159.192.11
+    port: 500
+  - name: "[☁️] 162.159.192.12:2408"
+    <<: *warp-common
+    server: 162.159.192.12
+    port: 2408
+  - name: "[☁️] 162.159.192.12:1701"
+    <<: *warp-common
+    server: 162.159.192.12
+    port: 1701
+  - name: "[☁️] 162.159.192.12:4500"
+    <<: *warp-common
+    server: 162.159.192.12
+    port: 4500
+  - name: "[☁️] 162.159.192.12:500"
+    <<: *warp-common
+    server: 162.159.192.12
+    port: 500
+  - name: "[☁️] 162.159.192.13:2408"
+    <<: *warp-common
+    server: 162.159.192.13
+    port: 2408
+  - name: "[☁️] 162.159.192.13:1701"
+    <<: *warp-common
+    server: 162.159.192.13
+    port: 1701
+  - name: "[☁️] 162.159.192.13:4500"
+    <<: *warp-common
+    server: 162.159.192.13
+    port: 4500
+  - name: "[☁️] 162.159.192.13:500"
+    <<: *warp-common
+    server: 162.159.192.13
+    port: 500
+  - name: "[☁️] 162.159.192.14:2408"
+    <<: *warp-common
+    server: 162.159.192.14
+    port: 2408
+  - name: "[☁️] 162.159.192.14:1701"
+    <<: *warp-common
+    server: 162.159.192.14
+    port: 1701
+  - name: "[☁️] 162.159.192.14:4500"
+    <<: *warp-common
+    server: 162.159.192.14
+    port: 4500
+  - name: "[☁️] 162.159.192.14:500"
+    <<: *warp-common
+    server: 162.159.192.14
+    port: 500
+  - name: "[☁️] 162.159.192.15:2408"
+    <<: *warp-common
+    server: 162.159.192.15
+    port: 2408
+  - name: "[☁️] 162.159.192.15:1701"
+    <<: *warp-common
+    server: 162.159.192.15
+    port: 1701
+  - name: "[☁️] 162.159.192.15:4500"
+    <<: *warp-common
+    server: 162.159.192.15
+    port: 4500
+  - name: "[☁️] 162.159.192.15:500"
+    <<: *warp-common
+    server: 162.159.192.15
+    port: 500
+  - name: "[☁️] 162.159.192.16:2408"
+    <<: *warp-common
+    server: 162.159.192.16
+    port: 2408
+  - name: "[☁️] 162.159.192.16:1701"
+    <<: *warp-common
+    server: 162.159.192.16
+    port: 1701
+  - name: "[☁️] 162.159.192.16:4500"
+    <<: *warp-common
+    server: 162.159.192.16
+    port: 4500
+  - name: "[☁️] 162.159.192.16:500"
+    <<: *warp-common
+    server: 162.159.192.16
+    port: 500
+  - name: "[☁️] 162.159.192.17:2408"
+    <<: *warp-common
+    server: 162.159.192.17
+    port: 2408
+  - name: "[☁️] 162.159.192.17:1701"
+    <<: *warp-common
+    server: 162.159.192.17
+    port: 1701
+  - name: "[☁️] 162.159.192.17:4500"
+    <<: *warp-common
+    server: 162.159.192.17
+    port: 4500
+  - name: "[☁️] 162.159.192.17:500"
+    <<: *warp-common
+    server: 162.159.192.17
+    port: 500
+  - name: "[☁️] 162.159.192.18:2408"
+    <<: *warp-common
+    server: 162.159.192.18
+    port: 2408
+  - name: "[☁️] 162.159.192.18:1701"
+    <<: *warp-common
+    server: 162.159.192.18
+    port: 1701
+  - name: "[☁️] 162.159.192.18:4500"
+    <<: *warp-common
+    server: 162.159.192.18
+    port: 4500
+  - name: "[☁️] 162.159.192.18:500"
+    <<: *warp-common
+    server: 162.159.192.18
+    port: 500
+  - name: "[☁️] 162.159.192.19:2408"
+    <<: *warp-common
+    server: 162.159.192.19
+    port: 2408
+  - name: "[☁️] 162.159.192.19:1701"
+    <<: *warp-common
+    server: 162.159.192.19
+    port: 1701
+  - name: "[☁️] 162.159.192.19:4500"
+    <<: *warp-common
+    server: 162.159.192.19
+    port: 4500
+  - name: "[☁️] 162.159.192.19:500"
+    <<: *warp-common
+    server: 162.159.192.19
+    port: 500
+  - name: "[☁️] 162.159.192.20:2408"
+    <<: *warp-common
+    server: 162.159.192.20
+    port: 2408
+  - name: "[☁️] 162.159.192.20:1701"
+    <<: *warp-common
+    server: 162.159.192.20
+    port: 1701
+  - name: "[☁️] 162.159.192.20:4500"
+    <<: *warp-common
+    server: 162.159.192.20
+    port: 4500
+  - name: "[☁️] 162.159.192.20:500"
+    <<: *warp-common
+    server: 162.159.192.20
+    port: 500
+  - name: "[☁️] 162.159.195.1:2408"
+    <<: *warp-common
+    server: 162.159.195.1
+    port: 2408
+  - name: "[☁️] 162.159.195.1:1701"
+    <<: *warp-common
+    server: 162.159.195.1
+    port: 1701
+  - name: "[☁️] 162.159.195.1:4500"
+    <<: *warp-common
+    server: 162.159.195.1
+    port: 4500
+  - name: "[☁️] 162.159.195.2:2408"
+    <<: *warp-common
+    server: 162.159.195.2
+    port: 2408
+  - name: "[☁️] 162.159.195.2:1701"
+    <<: *warp-common
+    server: 162.159.195.2
+    port: 1701
+  - name: "[☁️] 162.159.195.2:4500"
+    <<: *warp-common
+    server: 162.159.195.2
+    port: 4500
+  - name: "[☁️] 162.159.195.2:500"
+    <<: *warp-common
+    server: 162.159.195.2
+    port: 500
+  - name: "[☁️] 162.159.195.3:2408"
+    <<: *warp-common
+    server: 162.159.195.3
+    port: 2408
+  - name: "[☁️] 162.159.195.3:1701"
+    <<: *warp-common
+    server: 162.159.195.3
+    port: 1701
+  - name: "[☁️] 162.159.195.3:4500"
+    <<: *warp-common
+    server: 162.159.195.3
+    port: 4500
+  - name: "[☁️] 162.159.195.3:500"
+    <<: *warp-common
+    server: 162.159.195.3
+    port: 500
+  - name: "[☁️] 162.159.195.4:2408"
+    <<: *warp-common
+    server: 162.159.195.4
+    port: 2408
+  - name: "[☁️] 162.159.195.4:1701"
+    <<: *warp-common
+    server: 162.159.195.4
+    port: 1701
+  - name: "[☁️] 162.159.195.4:4500"
+    <<: *warp-common
+    server: 162.159.195.4
+    port: 4500
+  - name: "[☁️] 162.159.195.4:500"
+    <<: *warp-common
+    server: 162.159.195.4
+    port: 500
+  - name: "[☁️] 162.159.195.5:2408"
+    <<: *warp-common
+    server: 162.159.195.5
+    port: 2408
+  - name: "[☁️] 162.159.195.5:1701"
+    <<: *warp-common
+    server: 162.159.195.5
+    port: 1701
+  - name: "[☁️] 162.159.195.5:4500"
+    <<: *warp-common
+    server: 162.159.195.5
+    port: 4500
+  - name: "[☁️] 162.159.195.5:500"
+    <<: *warp-common
+    server: 162.159.195.5
+    port: 500
+  - name: "[☁️] 162.159.195.6:2408"
+    <<: *warp-common
+    server: 162.159.195.6
+    port: 2408
+  - name: "[☁️] 162.159.195.6:1701"
+    <<: *warp-common
+    server: 162.159.195.6
+    port: 1701
+  - name: "[☁️] 162.159.195.6:4500"
+    <<: *warp-common
+    server: 162.159.195.6
+    port: 4500
+  - name: "[☁️] 162.159.195.6:500"
+    <<: *warp-common
+    server: 162.159.195.6
+    port: 500
+  - name: "[☁️] 162.159.195.7:2408"
+    <<: *warp-common
+    server: 162.159.195.7
+    port: 2408
+  - name: "[☁️] 162.159.195.7:1701"
+    <<: *warp-common
+    server: 162.159.195.7
+    port: 1701
+  - name: "[☁️] 162.159.195.7:4500"
+    <<: *warp-common
+    server: 162.159.195.7
+    port: 4500
+  - name: "[☁️] 162.159.195.7:500"
+    <<: *warp-common
+    server: 162.159.195.7
+    port: 500
+  - name: "[☁️] 162.159.195.8:2408"
+    <<: *warp-common
+    server: 162.159.195.8
+    port: 2408
+  - name: "[☁️] 162.159.195.8:1701"
+    <<: *warp-common
+    server: 162.159.195.8
+    port: 1701
+  - name: "[☁️] 162.159.195.8:4500"
+    <<: *warp-common
+    server: 162.159.195.8
+    port: 4500
+  - name: "[☁️] 162.159.195.8:500"
+    <<: *warp-common
+    server: 162.159.195.8
+    port: 500
+  - name: "[☁️] 162.159.195.9:2408"
+    <<: *warp-common
+    server: 162.159.195.9
+    port: 2408
+  - name: "[☁️] 162.159.195.9:1701"
+    <<: *warp-common
+    server: 162.159.195.9
+    port: 1701
+  - name: "[☁️] 162.159.195.9:4500"
+    <<: *warp-common
+    server: 162.159.195.9
+    port: 4500
+  - name: "[☁️] 162.159.195.9:500"
+    <<: *warp-common
+    server: 162.159.195.9
+    port: 500
+  - name: "[☁️] 162.159.195.10:2408"
+    <<: *warp-common
+    server: 162.159.195.10
+    port: 2408
+  - name: "[☁️] 162.159.195.10:1701"
+    <<: *warp-common
+    server: 162.159.195.10
+    port: 1701
+  - name: "[☁️] 162.159.195.10:4500"
+    <<: *warp-common
+    server: 162.159.195.10
+    port: 4500
+  - name: "[☁️] 162.159.195.10:500"
+    <<: *warp-common
+    server: 162.159.195.10
+    port: 500
+# === END WARP PROXIES ===
 
 rule-providers:
   netflix:
@@ -213,65 +780,52 @@ rule-providers:
 proxy-groups:
   - name: Cloudflare
     type: select
-    use:
-      - origin-endpoint
-      - default-endpoint
+    include-all-proxies: true
+    filter: "⭐|☁️"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/cloudflare-icon.svg
   - name: Twitch
     type: select
-    use:
-      - geo-endpoint
+    include-all-proxies: true
+    filter: "🌍"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/twitch-icon.svg
   - name: Игры
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
-      - default-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐|☁️"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/steampowered-icon.svg
   - name: YouTube
     type: select
-    use:
-      - origin-endpoint
-      - default-endpoint
+    include-all-proxies: true
+    filter: "⭐|☁️"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/youtube-icon.svg
   - name: Discord
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
-      - default-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐|☁️"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/discord-icon.svg
   - name: Telegram
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
-      - default-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐|☁️"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/telegram-icon.svg
   - name: WhatsApp
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
-      - default-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐|☁️"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/whatsapp-icon.svg
   - name: Геоблок
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
-      - default-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐|☁️"
   - name: AI
     type: select
-    use:
-      - geo-endpoint
+    include-all-proxies: true
+    filter: "🌍"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/google-icon.svg
   - name: Torrent
     type: select
-    use:
-      - origin-endpoint
-      - default-endpoint
+    include-all-proxies: true
+    filter: "⭐|☁️"
 
 rules:
   - RULE-SET,private-ips,DIRECT,no-resolve

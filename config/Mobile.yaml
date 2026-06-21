@@ -25,17 +25,112 @@ x-default-interval: &default-interval 86400
 x-check-interval: &check-interval 300
 x-health-url: &health-url http://speed.cloudflare.com/
 
-proxy-providers:
-  geo-endpoint:
-    type: http
-    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/refs/heads/main/proxies/geo-endpoint.yaml
-    path: ./provider/geo-endpoint.yaml
-    interval: *default-interval
-  origin-endpoint:
-    type: http
-    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/refs/heads/main/proxies/origin-endpoint.yaml
-    path: ./provider/origin-endpoint.yaml
-    interval: *default-interval
+# warp-types: geo origin
+proxies:
+# === BEGIN WARP PROXIES (auto-generated from proxies/*.yaml — do not edit) ===
+  # ── geo-endpoint ──
+  - name: "[🌍] 🇳🇱 Нидерланды"
+    <<: *warp-common
+    server: nl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇵🇱 Польша"
+    <<: *warp-common
+    server: pl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇷🇺 Россия"
+    <<: *warp-common
+    server: ru0.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇫🇮 Финляндия"
+    <<: *warp-common
+    server: fi.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇩🇪 Германия"
+    <<: *warp-common
+    server: de.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] 🇱🇻 Латвия"
+    <<: *warp-common
+    server: lv.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] LTE 🇵🇱 Польша"
+    <<: *warp-common
+    server: mpl.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] LTE 🇫🇮 Финляндия"
+    <<: *warp-common
+    server: mfi.tribukvy.ltd
+    port: 4500
+  # ── origin-endpoint ──
+  - name: "[⭐] engage.cloudflareclient.com:4500"
+    <<: *warp-common
+    server: engage.cloudflareclient.com
+    port: 4500
+  - name: "[⭐] engage.cloudflareclient.com:500"
+    <<: *warp-common
+    server: engage.cloudflareclient.com
+    port: 500
+  - name: "[⭐] engage.cloudflareclient.com:2408"
+    <<: *warp-common
+    server: engage.cloudflareclient.com
+    port: 2408
+  - name: "[⭐] 162.159.192.1:4500"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 500
+  - name: "[⭐] 162.159.192.1:500"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 500
+  - name: "[⭐] 162.159.192.1:2408"
+    <<: *warp-common
+    server: 162.159.192.1
+    port: 2408
+  - name: "[⭐] 8.6.112.1:4500"
+    <<: *warp-common
+    server: 8.6.112.1
+    port: 4500
+  - name: "[⭐] 8.34.70.1:500"
+    <<: *warp-common
+    server: 8.34.70.1
+    port: 500
+  - name: "[⭐] 8.34.146.1:2408"
+    <<: *warp-common
+    server: 8.34.146.1
+    port: 2408
+  - name: "[⭐] 8.35.211.1:4500"
+    <<: *warp-common
+    server: 8.35.211.1
+    port: 4500
+  - name: "[⭐] 8.39.125.1:500"
+    <<: *warp-common
+    server: 8.39.125.1
+    port: 500
+  - name: "[⭐] 8.39.204.1:2408"
+    <<: *warp-common
+    server: 8.39.204.1
+    port: 2408
+  - name: "[⭐] 8.39.214.1:4500"
+    <<: *warp-common
+    server: 8.39.214.1
+    port: 4500
+  - name: "[⭐] 8.47.69.1:500"
+    <<: *warp-common
+    server: 8.47.69.1
+    port: 500
+  - name: "[⭐] 188.114.96.1:2408"
+    <<: *warp-common
+    server: 188.114.96.1
+    port: 2408
+  - name: "[⭐] 188.114.97.1:4500"
+    <<: *warp-common
+    server: 188.114.97.1
+    port: 4500
+  - name: "[⭐] 188.114.98.1:500"
+    <<: *warp-common
+    server: 188.114.98.1
+    port: 500
+# === END WARP PROXIES ===
 
 rule-providers:
   netflix:
@@ -215,57 +310,52 @@ rule-providers:
 proxy-groups:
   - name: Cloudflare
     type: select
-    use:
-      - origin-endpoint
+    include-all-proxies: true
+    filter: "⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/cloudflare-icon.svg
   - name: Twitch
     type: select
-    use:
-      - geo-endpoint
+    include-all-proxies: true
+    filter: "🌍"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/twitch-icon.svg
   - name: Игры
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/steampowered-icon.svg
   - name: YouTube
     type: select
-    use:
-      - origin-endpoint
+    include-all-proxies: true
+    filter: "⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/youtube-icon.svg
   - name: Discord
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/discord-icon.svg
   - name: Telegram
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/telegram-icon.svg
   - name: WhatsApp
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/whatsapp-icon.svg
   - name: Геоблок
     type: select
-    use:
-      - geo-endpoint
-      - origin-endpoint
+    include-all-proxies: true
+    filter: "🌍|⭐"
   - name: AI
     type: select
-    use:
-      - geo-endpoint
+    include-all-proxies: true
+    filter: "🌍"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/google-icon.svg
   - name: Torrent
     type: select
-    use:
-      - origin-endpoint
+    include-all-proxies: true
+    filter: "⭐"
 
 rules:
   - RULE-SET,private-ips,DIRECT,no-resolve
