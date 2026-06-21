@@ -28,12 +28,12 @@ x-health-url: &health-url http://speed.cloudflare.com/
 proxy-providers:
   geo-endpoint:
     type: http
-    url: 
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/refs/heads/main/proxies/geo-endpoint.yaml
     path: ./provider/geo-endpoint.yaml
     interval: *default-interval
   origin-endpoint:
     type: http
-    url: 
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/refs/heads/main/proxies/origin-endpoint.yaml
     path: ./provider/origin-endpoint.yaml
     interval: *default-interval
 
