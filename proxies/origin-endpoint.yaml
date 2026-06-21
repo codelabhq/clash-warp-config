@@ -1,0 +1,52 @@
+proxies:
+  - name: "[⭐] engage.cloudflareclient.com:4500"
+    server: engage.cloudflareclient.com
+    port: 4500
+  - name: "[⭐] engage.cloudflareclient.com:500"
+    server: engage.cloudflareclient.com
+    port: 500
+  - name: "[⭐] engage.cloudflareclient.com:2408"
+    server: engage.cloudflareclient.com
+    port: 2408
+  - name: "[⭐] 162.159.192.1:4500"
+    server: 162.159.192.1
+    port: 500
+  - name: "[⭐] 162.159.192.1:500"
+    server: 162.159.192.1
+    port: 500
+  - name: "[⭐] 162.159.192.1:2408"
+    server: 162.159.192.1
+    port: 2408
+  - name: "[⭐] 8.6.112.1:4500"
+    server: 8.6.112.1
+    port: 4500
+  - name: "[⭐] 8.34.70.1:500"
+    server: 8.34.70.1
+    port: 500
+  - name: "[⭐] 8.34.146.1:2408"
+    server: 8.34.146.1
+    port: 2408
+  - name: "[⭐] 8.35.211.1:4500"
+    server: 8.35.211.1
+    port: 4500
+  - name: "[⭐] 8.39.125.1:500"
+    server: 8.39.125.1
+    port: 500
+  - name: "[⭐] 8.39.204.1:2408"
+    server: 8.39.204.1
+    port: 2408
+  - name: "[⭐] 8.39.214.1:4500"
+    server: 8.39.214.1
+    port: 4500
+  - name: "[⭐] 8.47.69.1:500"
+    server: 8.47.69.1
+    port: 500
+  - name: "[⭐] 188.114.96.1:2408"
+    server: 188.114.96.1
+    port: 2408
+  - name: "[⭐] 188.114.97.1:4500"
+    server: 188.114.97.1
+    port: 4500
+  - name: "[⭐] 188.114.98.1:500"
+    server: 188.114.98.1
+    port: 500

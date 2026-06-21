@@ -1,0 +1,602 @@
+mode: rule
+# Proxy Mode: MIXED (TCP via TPROXY port 7894, UDP via TUN)
+tproxy-port: 7894
+tun:
+  enable: true
+  device: clash-tun
+  stack: system
+  auto-route: false
+  auto-redirect: false
+  auto-detect-interface: false
+ipv6: false
+log-level: error
+allow-lan: false
+unified-delay: true
+tcp-concurrent: true
+external-controller: 0.0.0.0:9090
+external-ui: ./ui
+external-ui-url: "https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip"
+
+hosts:
+  app.4pda.to: 31.131.253.250
+  finland10000.discord.media: 104.25.158.178
+  finland10001.discord.media: 104.25.158.178
+  finland10002.discord.media: 104.25.158.178
+  finland10003.discord.media: 104.25.158.178
+  finland10004.discord.media: 104.25.158.178
+  finland10005.discord.media: 104.25.158.178
+  finland10006.discord.media: 104.25.158.178
+  finland10007.discord.media: 104.25.158.178
+  finland10008.discord.media: 104.25.158.178
+  finland10009.discord.media: 104.25.158.178
+  finland10010.discord.media: 104.25.158.178
+  finland10011.discord.media: 104.25.158.178
+  finland10012.discord.media: 104.25.158.178
+  finland10013.discord.media: 104.25.158.178
+  finland10014.discord.media: 104.25.158.178
+  finland10015.discord.media: 104.25.158.178
+  finland10016.discord.media: 104.25.158.178
+  finland10017.discord.media: 104.25.158.178
+  finland10018.discord.media: 104.25.158.178
+  finland10019.discord.media: 104.25.158.178
+  finland10020.discord.media: 104.25.158.178
+  finland10021.discord.media: 104.25.158.178
+  finland10022.discord.media: 104.25.158.178
+  finland10023.discord.media: 104.25.158.178
+  finland10024.discord.media: 104.25.158.178
+  finland10025.discord.media: 104.25.158.178
+  finland10026.discord.media: 104.25.158.178
+  finland10027.discord.media: 104.25.158.178
+  finland10028.discord.media: 104.25.158.178
+  finland10029.discord.media: 104.25.158.178
+  finland10030.discord.media: 104.25.158.178
+  finland10031.discord.media: 104.25.158.178
+  finland10032.discord.media: 104.25.158.178
+  finland10033.discord.media: 104.25.158.178
+  finland10034.discord.media: 104.25.158.178
+  finland10035.discord.media: 104.25.158.178
+  finland10036.discord.media: 104.25.158.178
+  finland10037.discord.media: 104.25.158.178
+  finland10038.discord.media: 104.25.158.178
+  finland10039.discord.media: 104.25.158.178
+  finland10040.discord.media: 104.25.158.178
+  finland10041.discord.media: 104.25.158.178
+  finland10042.discord.media: 104.25.158.178
+  finland10043.discord.media: 104.25.158.178
+  finland10044.discord.media: 104.25.158.178
+  finland10045.discord.media: 104.25.158.178
+  finland10046.discord.media: 104.25.158.178
+  finland10047.discord.media: 104.25.158.178
+  finland10048.discord.media: 104.25.158.178
+  finland10049.discord.media: 104.25.158.178
+  finland10050.discord.media: 104.25.158.178
+  finland10051.discord.media: 104.25.158.178
+  finland10052.discord.media: 104.25.158.178
+  finland10053.discord.media: 104.25.158.178
+  finland10054.discord.media: 104.25.158.178
+  finland10055.discord.media: 104.25.158.178
+  finland10056.discord.media: 104.25.158.178
+  finland10057.discord.media: 104.25.158.178
+  finland10058.discord.media: 104.25.158.178
+  finland10059.discord.media: 104.25.158.178
+  finland10060.discord.media: 104.25.158.178
+  finland10061.discord.media: 104.25.158.178
+  finland10062.discord.media: 104.25.158.178
+  finland10063.discord.media: 104.25.158.178
+  finland10064.discord.media: 104.25.158.178
+  finland10065.discord.media: 104.25.158.178
+  finland10066.discord.media: 104.25.158.178
+  finland10067.discord.media: 104.25.158.178
+  finland10068.discord.media: 104.25.158.178
+  finland10069.discord.media: 104.25.158.178
+  finland10070.discord.media: 104.25.158.178
+  finland10071.discord.media: 104.25.158.178
+  finland10072.discord.media: 104.25.158.178
+  finland10073.discord.media: 104.25.158.178
+  finland10074.discord.media: 104.25.158.178
+  finland10075.discord.media: 104.25.158.178
+  finland10076.discord.media: 104.25.158.178
+  finland10077.discord.media: 104.25.158.178
+  finland10078.discord.media: 104.25.158.178
+  finland10079.discord.media: 104.25.158.178
+  finland10080.discord.media: 104.25.158.178
+  finland10081.discord.media: 104.25.158.178
+  finland10082.discord.media: 104.25.158.178
+  finland10083.discord.media: 104.25.158.178
+  finland10084.discord.media: 104.25.158.178
+  finland10085.discord.media: 104.25.158.178
+  finland10086.discord.media: 104.25.158.178
+  finland10087.discord.media: 104.25.158.178
+  finland10088.discord.media: 104.25.158.178
+  finland10089.discord.media: 104.25.158.178
+  finland10090.discord.media: 104.25.158.178
+  finland10091.discord.media: 104.25.158.178
+  finland10092.discord.media: 104.25.158.178
+  finland10093.discord.media: 104.25.158.178
+  finland10094.discord.media: 104.25.158.178
+  finland10095.discord.media: 104.25.158.178
+  finland10096.discord.media: 104.25.158.178
+  finland10097.discord.media: 104.25.158.178
+  finland10098.discord.media: 104.25.158.178
+  finland10099.discord.media: 104.25.158.178
+  finland10100.discord.media: 104.25.158.178
+  finland10101.discord.media: 104.25.158.178
+  finland10102.discord.media: 104.25.158.178
+  finland10103.discord.media: 104.25.158.178
+  finland10104.discord.media: 104.25.158.178
+  finland10105.discord.media: 104.25.158.178
+  finland10106.discord.media: 104.25.158.178
+  finland10107.discord.media: 104.25.158.178
+  finland10108.discord.media: 104.25.158.178
+  finland10109.discord.media: 104.25.158.178
+  finland10110.discord.media: 104.25.158.178
+  finland10111.discord.media: 104.25.158.178
+  finland10112.discord.media: 104.25.158.178
+  finland10113.discord.media: 104.25.158.178
+  finland10114.discord.media: 104.25.158.178
+  finland10115.discord.media: 104.25.158.178
+  finland10116.discord.media: 104.25.158.178
+  finland10117.discord.media: 104.25.158.178
+  finland10118.discord.media: 104.25.158.178
+  finland10119.discord.media: 104.25.158.178
+  finland10120.discord.media: 104.25.158.178
+  finland10121.discord.media: 104.25.158.178
+  finland10122.discord.media: 104.25.158.178
+  finland10123.discord.media: 104.25.158.178
+  finland10124.discord.media: 104.25.158.178
+  finland10125.discord.media: 104.25.158.178
+  finland10126.discord.media: 104.25.158.178
+  finland10127.discord.media: 104.25.158.178
+  finland10128.discord.media: 104.25.158.178
+  finland10129.discord.media: 104.25.158.178
+  finland10130.discord.media: 104.25.158.178
+  finland10131.discord.media: 104.25.158.178
+  finland10132.discord.media: 104.25.158.178
+  finland10133.discord.media: 104.25.158.178
+  finland10134.discord.media: 104.25.158.178
+  finland10135.discord.media: 104.25.158.178
+  finland10136.discord.media: 104.25.158.178
+  finland10137.discord.media: 104.25.158.178
+  finland10138.discord.media: 104.25.158.178
+  finland10139.discord.media: 104.25.158.178
+  finland10140.discord.media: 104.25.158.178
+  finland10141.discord.media: 104.25.158.178
+  finland10142.discord.media: 104.25.158.178
+  finland10143.discord.media: 104.25.158.178
+  finland10144.discord.media: 104.25.158.178
+  finland10145.discord.media: 104.25.158.178
+  finland10146.discord.media: 104.25.158.178
+  finland10147.discord.media: 104.25.158.178
+  finland10148.discord.media: 104.25.158.178
+  finland10149.discord.media: 104.25.158.178
+  finland10150.discord.media: 104.25.158.178
+  finland10151.discord.media: 104.25.158.178
+  finland10152.discord.media: 104.25.158.178
+  finland10153.discord.media: 104.25.158.178
+  finland10154.discord.media: 104.25.158.178
+  finland10155.discord.media: 104.25.158.178
+  finland10156.discord.media: 104.25.158.178
+  finland10157.discord.media: 104.25.158.178
+  finland10158.discord.media: 104.25.158.178
+  finland10159.discord.media: 104.25.158.178
+  finland10160.discord.media: 104.25.158.178
+  finland10161.discord.media: 104.25.158.178
+  finland10162.discord.media: 104.25.158.178
+  finland10163.discord.media: 104.25.158.178
+  finland10164.discord.media: 104.25.158.178
+  finland10165.discord.media: 104.25.158.178
+  finland10166.discord.media: 104.25.158.178
+  finland10167.discord.media: 104.25.158.178
+  finland10168.discord.media: 104.25.158.178
+  finland10169.discord.media: 104.25.158.178
+  finland10170.discord.media: 104.25.158.178
+  finland10171.discord.media: 104.25.158.178
+  finland10172.discord.media: 104.25.158.178
+  finland10173.discord.media: 104.25.158.178
+  finland10174.discord.media: 104.25.158.178
+  finland10175.discord.media: 104.25.158.178
+  finland10176.discord.media: 104.25.158.178
+  finland10177.discord.media: 104.25.158.178
+  finland10178.discord.media: 104.25.158.178
+  finland10179.discord.media: 104.25.158.178 
+  finland10180.discord.media: 104.25.158.178
+  finland10181.discord.media: 104.25.158.178
+  finland10182.discord.media: 104.25.158.178
+  finland10183.discord.media: 104.25.158.178
+  finland10184.discord.media: 104.25.158.178
+  finland10185.discord.media: 104.25.158.178
+  finland10186.discord.media: 104.25.158.178
+  finland10187.discord.media: 104.25.158.178
+  finland10188.discord.media: 104.25.158.178
+  finland10189.discord.media: 104.25.158.178
+  finland10190.discord.media: 104.25.158.178
+  finland10191.discord.media: 104.25.158.178
+  finland10192.discord.media: 104.25.158.178
+  finland10193.discord.media: 104.25.158.178
+  finland10194.discord.media: 104.25.158.178
+  finland10195.discord.media: 104.25.158.178
+  finland10196.discord.media: 104.25.158.178
+  finland10197.discord.media: 104.25.158.178
+  finland10198.discord.media: 104.25.158.178
+  finland10199.discord.media: 104.25.158.178
+
+dns:
+  enable: true
+  listen: 0.0.0.0:7874
+  ipv6: false
+  default-nameserver:
+    - 1.1.1.1
+    - 1.0.0.1
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+  nameserver-policy:
+    "+.lan": system
+    "msftconnecttest.com": system
+    "msftncsi.com": system
+    "kion.ru": system
+
+keep-alive-idle: 15
+keep-alive-interval: 15
+
+profile:
+  store-selected: true
+
+routing-mark: 2
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+  skip-domain:
+    - "Mijia Cloud"
+    - '+.lan'
+    - '+.local'
+    - '+.push.apple.com'
+    - '+.apple.com'
+    - '+.msftconnecttest.com'
+    - '+.3gppnetwork'
+
+warp-common: &warp-common
+  type: wireguard
+  ip: 172.16.0.2
+  ipv6: 2606:4700:110:8e80:88b7:6faa:1bd1:91e6
+  private-key: # вставьте ваш ключ
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips: ['0.0.0.0/0']
+  udp: true
+  mtu: 1280
+  remote-dns-resolve: true
+  dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
+  amnezia-wg-option:
+   jc: 4
+   jmin: 40
+   jmax: 70
+   s1: 0
+   s2: 0
+   h1: 1
+   h2: 2
+   h4: 3
+   h3: 4
+   i1: <b 0xc10000000114367096bb0fb3f58f3a3fb8aaacd61d63a1c8a40e14f7374b8a62dccba6431716c3abf6f5afbcfb39bd008000047c32e268567c652e6f4db58bff759bc8c5aaca183b87cb4d22938fe7d8dca22a679a79e4d9ee62e4bbb3a380dd78d4e8e48f26b38a1d42d76b371a5a9a0444827a69d1ab5872a85749f65a4104e931740b4dc1e2dd77733fc7fac4f93011cd622f2bb47e85f71992e2d585f8dc765a7a12ddeb879746a267393ad023d267c4bd79f258703e27345155268bd3cc0506ebd72e2e3c6b5b0f005299cd94b67ddabe30389c4f9b5c2d512dcc298c14f14e9b7f931e1dc397926c31fbb7cebfc668349c218672501031ecce151d4cb03c4c660b6c6fe7754e75446cd7de09a8c81030c5f6fb377203f551864f3d83e27de7b86499736cbbb549b2f37f436db1cae0a4ea39930f0534aacdd1e3534bc87877e2afabe959ced261f228d6362e6fd277c88c312d966c8b9f67e4a92e757773db0b0862fb8108d1d8fa262a40a1b4171961f0704c8ba314da2482ac8ed9bd28d4b50f7432d89fd800c25a50c5e2f5c0710544fef5273401116aa0572366d8e49ad758fcb29e6a92912e644dbe227c247cb3417eabfab2db16796b2fba420de3b1dc94e8361f1f324a331ddaf1e626553138860757fd0bf687566108b77b70fb9f8f8962eca599c4a70ed373666961a8cb506b96756d9e28b94122b20f16b54f118c0e603ce0b831efea614ad836df6cf9affbdd09596412547496967da758cec9080295d853b0861670b71d9abde0d562b1a6de82782a5b0c14d297f27283a895abc889a5f6703f0e6eb95f67b2da45f150d0d8ab805612d570c2d5cb6997ac3a7756226c2f5c8982ffbd480c5004b0660a3c9468945efde90864019a2b519458724b55d766e16b0da25c0557c01f3c11ddeb024b62e303640e17fdd57dedb3aeb4a2c1b7c93059f9c1d7118d77caac1cd0f6556e46cbc991c1bb16970273dea833d01e5090d061a0c6d25af2415cd2878af97f6d0e7f1f936247b394ecb9bd484da6be936dee9b0b92dc90101a1b4295e97a9772f2263eb09431995aa173df4ca2abd687d87706f0f93eaa5e13cbe3b574fa3cfe94502ace25265778da6960d561381769c24e0cbd7aac73c16f95ae74ff7ec38124f7c722b9cb151d4b6841343f29be8f35145e1b27021056820fed77003df8554b4155716c8cf6049ef5e318481460a8ce3be7c7bfac695255be84dc491c19e9dedc449dd3471728cd2a3ee51324ccb3eef121e3e08f8e18f0006ea8957371d9f2f739f0b89e4db11e5c6430ada61572e589519fbad4498b460ce6e4407fc2d8f2dd4293a50a0cb8fcaaf35cd9a8cc097e3603fbfa08d9036f52b3e7fcce11b83ad28a4ac12dba0395a0cc871cefd1a2856fffb3f28d82ce35cf80579974778bab13d9b3578d8c75a2d196087a2cd439aff2bb33f2db24ac175fff4ed91d36a4cdbfaf3f83074f03894ea40f17034629890da3efdbb41141b38368ab532209b69f057ddc559c19bc8ae62bf3fd564c9a35d9a83d14a95834a92bae6d9a29ae5e8ece07910d16433e4c6230c9bd7d68b47de0de9843988af6dc88b5301820443bd4d0537778bf6b4c1dd067fcf14b81015f2a67c7f2a28f9cb7e0684d3cb4b1c24d9b343122a086611b489532f1c3a26779da1706c6759d96d8ab>
+
+x-default-interval: &default-interval 86400
+x-check-interval: &check-interval 300
+x-health-url: &health-url http://speed.cloudflare.com/
+
+proxy-providers:
+  geo-endpoint:
+    type: http
+    url: 
+    path: ./provider/geo-endpoint.yaml
+    interval: *default-interval
+  origin-endpoint:
+    type: http
+    url: 
+    path: ./provider/origin-endpoint.yaml
+    interval: *default-interval
+  default-endpoint:
+    type: http
+    url: 
+    path: ./provider/default-endpoint.yaml
+    interval: *default-interval
+
+rule-providers:
+  netflix:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Netflix/Netflix_Classical.yaml"
+    path: ./ruleset/netflix.yaml
+    interval: *default-interval
+  tiktok:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.yaml"
+    path: ./ruleset/tiktok.yaml
+    interval: *default-interval
+  google-ai:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/google_ai.lst"
+    path: ./ruleset/google_ai.lst
+    interval: *default-interval
+  HODCA: 
+    type: http
+    behavior: domain
+    format: text
+    url: "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/hodca.lst"
+    path: ./ruleset/hodca.lst
+    interval: *default-interval
+  whatsapp:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp_No_Resolve.yaml"
+    path: ./ruleset/whatsapp.yaml
+    interval: *default-interval
+  telegram-ip:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs"
+    path: ./ruleset/telegram-ip.mrs
+    interval: *default-interval
+  telegram:
+    type: http
+    behavior: domain
+    format: mrs
+    url: "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/telegram.mrs"
+    path: ./ruleset/telegram.mrs
+    interval: *default-interval
+  discord-domain:
+    behavior: classical
+    type: http
+    url: "https://raw.githubusercontent.com/fildunsky/clash_discord/refs/heads/main/discord-domain.yaml"
+    interval: *default-interval
+    path: ./ruleset/discord-domain.yaml
+  discord-ip:
+    behavior: ipcidr
+    type: http
+    format: text
+    url: "https://raw.githubusercontent.com/fildunsky/clash_discord/refs/heads/main/discord-ip.list"
+    interval: *default-interval
+    path: ./ruleset/discord-ip.list
+  youtube:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.yaml"
+    path: ./ruleset/youtube.yaml
+    interval: *default-interval
+  porno:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/porno.txt"
+    path: ./ruleset/porno.yaml
+    interval: *default-interval
+  torrent:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/torrent.txt"
+    path: ./ruleset/torrent.yaml
+    interval: *default-interval
+  tools:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/tools.txt"
+    path: ./ruleset/tools.yaml
+    interval: *default-interval
+  socials:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/socials.txt"
+    path: ./ruleset/socials.yaml
+    interval: *default-interval
+  music:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/music.txt"
+    path: ./ruleset/music.yaml
+    interval: *default-interval
+  Steam:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Steam/Steam.yaml"
+    path: ./ruleset/steam.yaml
+    interval: *default-interval
+  EA:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/EA/EA.yaml"
+    path: ./ruleset/ea.yaml
+    interval: *default-interval
+  Blizzard:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Blizzard/Blizzard.yaml"
+    path: ./ruleset/blizzard.yaml
+    interval: *default-interval
+  Ubisoft:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Ubisoft/Ubisoft.yaml"
+    path: ./ruleset/ubisoft.yaml
+    interval: *default-interval
+  Epic:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Epic/Epic.yaml"
+    path: ./ruleset/epic.yaml
+    interval: *default-interval
+  Claude:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.yaml"
+    path: ./ruleset/claude.yaml
+    interval: *default-interval
+  private-domains:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/private.mrs
+    path: ./ruleset/geosite-private.mrs
+    interval: *default-interval
+  category-ru:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/category-ru.mrs
+    path: ./ruleset/category-ru.mrs
+    interval: *default-interval
+  whitelist:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/whitelist.mrs
+    path: ./ruleset/whitelist.mrs
+    interval: *default-interval
+  private-ips:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip/release/mihomo/private.mrs
+    path: ./ruleset/geoip-private.mrs
+    interval: 2592000
+  direct-ips:
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip/release/mihomo/direct.mrs
+    path: ./ruleset/direct-ips.mrs
+    interval: *default-interval
+
+proxy-groups:
+  - name: Cloudflare
+    type: select
+    use:
+      - origin-endpoint
+      - default-endpoint
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/cloudflare-icon.svg
+  - name: Twitch
+    type: select
+    use:
+      - geo-endpoint
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/twitch-icon.svg
+  - name: Игры
+    type: select
+    use:
+      - geo-endpoint
+      - origin-endpoint
+      - default-endpoint
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/steampowered-icon.svg
+  - name: YouTube
+    type: select
+    use:
+      - origin-endpoint
+      - default-endpoint
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/youtube-icon.svg
+  - name: Discord
+    type: select
+    use:
+      - geo-endpoint
+      - origin-endpoint
+      - default-endpoint
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/discord-icon.svg
+  - name: Telegram
+    type: select
+    use:
+      - geo-endpoint
+      - origin-endpoint
+      - default-endpoint
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/telegram-icon.svg
+  - name: WhatsApp
+    type: select
+    use:
+      - geo-endpoint
+      - origin-endpoint
+      - default-endpoint
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/whatsapp-icon.svg
+  - name: Геоблок
+    type: select
+    use:
+      - geo-endpoint
+      - origin-endpoint
+      - default-endpoint
+  - name: AI
+    type: select
+    use:
+      - geo-endpoint
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/google-icon.svg
+  - name: Torrent
+    type: select
+    use:
+      - origin-endpoint
+      - default-endpoint
+
+rules:
+  - RULE-SET,private-ips,DIRECT,no-resolve
+  - RULE-SET,private-domains,DIRECT
+
+  # === TELEGRAM ===
+  - RULE-SET,telegram-ip,Telegram
+  - RULE-SET,telegram,Telegram
+
+  # === БЛОКИРОВКА БЕСПОЛЕЗНОЙ РЕКЛАМЫ TWITCH (ТО, ЧТО ЕЩЁ МОЖНО ЗАБЛОКИРОВАТЬ) ===
+  - DOMAIN-SUFFIX,adserver.twitch.tv,REJECT
+  - DOMAIN-SUFFIX,ads.twitch.tv,REJECT
+  - DOMAIN-KEYWORD,twitch-ads,REJECT
+  - DOMAIN-KEYWORD,amazon-adsystem,REJECT
+
+  # === ОБХОД ОГРАНИЧЕНИЯ КАЧЕСТВА TWITCH (ЧЕРЕЗ ПРОКСИ) ===
+  - DOMAIN-SUFFIX,usher.ttvnw.net,Twitch
+  - DOMAIN-SUFFIX,gql.twitch.tv,Twitch
+
+  # === ОСТАЛЬНОЙ ТРАФИК TWITCH (ВИДЕО, ЧАТ) — НАПРЯМУЮ ===
+  - DOMAIN-SUFFIX,twitch.tv,DIRECT
+  - DOMAIN-SUFFIX,ttvnw.net,DIRECT
+  - DOMAIN-SUFFIX,jtvnw.net,DIRECT
+
+  # === РУССКИЕ САЙТЫ И ПРИЛОЖЕНИЯ ===
+  - RULE-SET,category-ru,DIRECT
+  - RULE-SET,whitelist,DIRECT
+
+  # === ОСТАЛЬНЫЕ СЕРВИСЫ ===
+  - RULE-SET,netflix,Геоблок
+  - RULE-SET,google-ai,AI
+  - RULE-SET,discord-domain,Discord
+  - RULE-SET,discord-ip,Discord
+  - RULE-SET,Claude,AI
+  - RULE-SET,tiktok,Геоблок
+  - RULE-SET,whatsapp,WhatsApp,no-resolve
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,porno,Геоблок
+  - RULE-SET,torrent,Torrent
+  - RULE-SET,tools,Геоблок
+  - RULE-SET,socials,Геоблок
+  - RULE-SET,music,Геоблок
+  - RULE-SET,Ubisoft,Игры
+  - RULE-SET,EA,Игры
+  - RULE-SET,Blizzard,Игры
+  - RULE-SET,Epic,Игры
+  - DOMAIN-KEYWORD,notion,Геоблок
+  - DOMAIN-SUFFIX,ntc.party,Cloudflare
+
+  # Вручную направляем Activision и матчмейкинг через нужный прокси
+  - DOMAIN-SUFFIX,activision.com,Игры
+  - DOMAIN-SUFFIX,callofduty.com,Игры
+  - DOMAIN-SUFFIX,demonware.net,Игры
+  - DOMAIN-SUFFIX,mw3.demonware.net,Игры
+
+  # Домены для которых жалко создавать RULE-SET
+  - DOMAIN-SUFFIX,apple.com,Cloudflare
+
+  # === ОБХОД БЛОКИРОВОК РКН ===
+  - RULE-SET,HODCA,Cloudflare
+
+  # === ВСЁ ОСТАЛЬНОЕ НАПРЯМУЮ ===
+  - RULE-SET,direct-ips,DIRECT
+  - MATCH,DIRECT
