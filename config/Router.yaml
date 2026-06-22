@@ -317,11 +317,11 @@ proxies:
     <<: *warp-common
     server: lv.tribukvy.ltd
     port: 4500
-  - name: "[🌍] LTE 🇵🇱 Польша"
+  - name: "[🌍] TEL 🇵🇱 Польша"
     <<: *warp-common
     server: mpl.tribukvy.ltd
     port: 4500
-  - name: "[🌍] LTE 🇫🇮 Финляндия"
+  - name: "[🌍] TEL 🇫🇮 Финляндия"
     <<: *warp-common
     server: mfi.tribukvy.ltd
     port: 4500
