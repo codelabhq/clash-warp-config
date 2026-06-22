@@ -1110,6 +1110,7 @@ proxy-groups:
       - ⚡️ Авто
       - Cloudflare
     filter: "🌍|⭐|☁️"
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/geoblock-icon.svg
   - name: AI
     type: select
     include-all-proxies: true
@@ -1125,6 +1126,7 @@ proxy-groups:
       - ⚡️ Авто
       - Cloudflare
     filter: "⭐|☁️"
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/torrent-icon.svg
   - name: Все остальное
     type: select
     include-all-proxies: true
