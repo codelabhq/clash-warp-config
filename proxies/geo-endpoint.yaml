@@ -17,9 +17,9 @@ proxies:
   - name: "[🌍] 🇱🇻 Латвия"
     server: lv.tribukvy.ltd
     port: 4500
-  - name: "[🌍] LTE 🇵🇱 Польша"
+  - name: "[🌍] TEL 🇵🇱 Польша"
     server: mpl.tribukvy.ltd
     port: 4500
-  - name: "[🌍] LTE 🇫🇮 Финляндия"
+  - name: "[🌍] TEL 🇫🇮 Финляндия"
     server: mfi.tribukvy.ltd
     port: 4500
