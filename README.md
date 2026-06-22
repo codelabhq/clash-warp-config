@@ -10,7 +10,7 @@
 |------------|------------|-----------------------|
 | Компьютер | гео + origin + default эндпоинты | [Computer.yaml](https://github.com/codelabhq/clash-warp-config/blob/main/config/Computer.yaml) |
 | Телефон | гео + origin эндпоинты | [Mobile.yaml](https://github.com/codelabhq/clash-warp-config/blob/main/config/Mobile.yaml) |
-| Роутер | гео + origin + default эндпоинты | [Router.yaml](https://github.com/codelabhq/clash-warp-config/blob/main/config/Router.yaml) |
+| Роутер | гео + origin эндпоинты | [Router.yaml](https://github.com/codelabhq/clash-warp-config/blob/main/config/Router.yaml) |
 
 ## Типы WARP-эндпоинтов
 
