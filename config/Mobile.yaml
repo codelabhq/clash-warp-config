@@ -363,12 +363,13 @@ proxy-groups:
       - ⚡️ Авто
     filter: "⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/cloudflare-icon.svg
-  - name: Обход Качества Twitch
+  - name: Обход качества Twitch
     type: select
     include-all-proxies: true
     proxies:
       - 🔓 Без VPN
     filter: "🌍"
+    exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/twitch-icon.svg
   - name: Игры
     type: select
@@ -423,6 +424,7 @@ proxy-groups:
       - ⚡️ Авто
       - Cloudflare
     filter: "🌍"
+    exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/geoblock-icon.svg
   - name: AI
     type: select
@@ -430,6 +432,7 @@ proxy-groups:
     proxies:
       - 🔓 Без VPN
     filter: "🌍"
+    exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/openai-icon.svg
   - name: Torrent
     type: select
@@ -498,8 +501,8 @@ rules:
   - DOMAIN-KEYWORD,amazon-adsystem,REJECT
 
   # === ОБХОД ОГРАНИЧЕНИЯ КАЧЕСТВА TWITCH (ЧЕРЕЗ ПРОКСИ) ===
-  - DOMAIN-SUFFIX,usher.ttvnw.net,Обход Качества Twitch
-  - DOMAIN-SUFFIX,gql.twitch.tv,Обход Качества Twitch
+  - DOMAIN-SUFFIX,usher.ttvnw.net,Обход качества Twitch
+  - DOMAIN-SUFFIX,gql.twitch.tv,Обход качества Twitch
 
   # === ОСТАЛЬНОЙ ТРАФИК TWITCH (ВИДЕО, ЧАТ) — НАПРЯМУЮ ===
   - DOMAIN-SUFFIX,twitch.tv,DIRECT
