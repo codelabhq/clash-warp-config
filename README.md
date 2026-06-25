@@ -26,7 +26,7 @@
 
 ```
 config/      готовые конфиги под устройства (Computer, Mobile, Router)
-proxies/     списки WARP-эндпоинтов по типам (geo, origin, default)
+proxies/     списки WARP-эндпоинтов по типам (geo, origin, default) и amnezia.yaml
 scripts/     build_config.py — сборка эндпоинтов в конфиги
 .github/     workflow для автоматической пересборки
 ```
@@ -34,6 +34,8 @@ scripts/     build_config.py — сборка эндпоинтов в конфи
 ## Сборка
 
 Эндпоинты хранятся отдельно в `proxies/*.yaml` и вставляются в `config/*.yaml` между маркерами `BEGIN WARP PROXIES` / `END WARP PROXIES`. Какие типы попадут в конкретный конфиг, задаёт директива `# warp-types:` в его заголовке.
+
+Параметры обфускации AmneziaWG (base + `i1` для `default`/`alt1`/`alt2`/`alt3` и `i2` для `alt3`) лежат в `proxies/amnezia.yaml`. Сборка объявляет их якорями в блоке `BEGIN AMNEZIA ANCHORS` / `END AMNEZIA ANCHORS` вверху каждого конфига (`&amnezia-common`, `&i1-default`, `&i1-alt1` …). `warp-common` ссылается на них через `&amnezia-base` (`<<: *amnezia-common` + `i1: *i1-default`); ноды без переопределения наследуют его через `<<: *warp-common`. Первые три origin-эндпоинта с `:4500` в имени дублируются записями `(Alt N)`, где `amnezia-wg-option` — это `<<: *amnezia-base` с переопределением `i1`/`i2` через алиасы.
 
 ```
 pip install pyyaml
