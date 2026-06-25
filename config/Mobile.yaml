@@ -174,6 +174,12 @@ proxies:
 # === END WARP PROXIES ===
 
 rule-providers:
+  twitter:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml"
+    path: ./ruleset/twitter.yaml
+    interval: *default-interval
   meta:
     type: http
     behavior: domain
@@ -310,6 +316,12 @@ rule-providers:
     behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.yaml"
     path: ./ruleset/claude.yaml
+    interval: *default-interval
+  OpenAI:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.yaml"
+    path: ./ruleset/openai.yaml
     interval: *default-interval
   private-domains:
     type: http
@@ -517,6 +529,7 @@ rules:
   # === ОСТАЛЬНЫЕ СЕРВИСЫ ===
   - RULE-SET,netflix,Геоблок
   - RULE-SET,google-ai,AI
+  - RULE-SET,OpenAI,AI
   - RULE-SET,discord-domain,Discord
   - RULE-SET,discord-ip,Discord
   - RULE-SET,Claude,AI
@@ -528,6 +541,7 @@ rules:
   - RULE-SET,torrent,Torrent
   - RULE-SET,tools,Геоблок
   - RULE-SET,socials,Геоблок
+  - RULE-SET,twitter,AI
   - RULE-SET,music,Геоблок
   - RULE-SET,Ubisoft,Игры
   - RULE-SET,EA,Игры
