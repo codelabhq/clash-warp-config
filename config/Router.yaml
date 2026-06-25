@@ -397,6 +397,12 @@ proxies:
 # === END WARP PROXIES ===
 
 rule-providers:
+  meta:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/meta.lst"
+    path: ./ruleset/meta.lst
+    interval: *default-interval
   netflix:
     type: http
     behavior: classical
@@ -524,7 +530,7 @@ rule-providers:
     interval: *default-interval
   Claude:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.yaml"
     path: ./ruleset/claude.yaml
     interval: *default-interval
@@ -616,7 +622,7 @@ proxy-groups:
       - Cloudflare
     filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/telegram-icon.svg
-  - name: WhatsApp
+  - name: Meta
     type: select
     include-all-proxies: true
     proxies:
@@ -624,7 +630,7 @@ proxy-groups:
       - ⚡️ Авто
       - Cloudflare
     filter: "🌍|⭐"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/whatsapp-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/meta-icon.svg
   - name: Геоблок
     type: select
     include-all-proxies: true
@@ -632,7 +638,7 @@ proxy-groups:
       - 🔓 Без VPN
       - ⚡️ Авто
       - Cloudflare
-    filter: "🌍|⭐"
+    filter: "🌍"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/geoblock-icon.svg
   - name: AI
     type: select
@@ -640,7 +646,7 @@ proxy-groups:
     proxies:
       - 🔓 Без VPN
     filter: "🌍"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/google-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/openai-icon.svg
   - name: Torrent
     type: select
     include-all-proxies: true
@@ -722,7 +728,8 @@ rules:
   - RULE-SET,discord-ip,Discord
   - RULE-SET,Claude,AI
   - RULE-SET,tiktok,Геоблок
-  - RULE-SET,whatsapp,WhatsApp,no-resolve
+  - RULE-SET,whatsapp,Meta,no-resolve
+  - RULE-SET,meta,Meta
   - RULE-SET,youtube,YouTube
   - RULE-SET,porno,Геоблок
   - RULE-SET,torrent,Torrent
