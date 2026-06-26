@@ -1,0 +1,19 @@
+payload:
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-SUFFIX,ig.me
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,facebook.net
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,fbcdn.net
+  - DOMAIN-SUFFIX,fbsbx.com
+  - DOMAIN-SUFFIX,internalfb.com
+  - DOMAIN-SUFFIX,oculus.com
+  - DOMAIN-SUFFIX,meta.com
+  - DOMAIN-SUFFIX,threads.net
+  - DOMAIN-SUFFIX,threads.com
+  - DOMAIN-SUFFIX,fb.com
+  - DOMAIN-SUFFIX,whatsapp.com
+  - DOMAIN-SUFFIX,whatsapp.net
+  - DOMAIN-SUFFIX,whatsapp.biz
+  - DOMAIN-SUFFIX,wa.me
+  - DOMAIN-SUFFIX,circlecrewpinkcrowd.com
