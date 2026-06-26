@@ -860,7 +860,7 @@ proxy-groups:
       - Relay-сервера
     filter: "🌍"
     exclude-filter: "🇷🇺"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/twitch-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/twitch-icon.svg
   - name: Игры
     type: select
     include-all-proxies: true
@@ -870,7 +870,7 @@ proxy-groups:
       - Cloudflare
       - Relay-сервера
     filter: "🌍|⭐|☁️"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/steampowered-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/steampowered-icon.svg
   - name: YouTube
     type: select
     include-all-proxies: true
@@ -879,7 +879,7 @@ proxy-groups:
       - ⚡️ Авто
       - Cloudflare
     filter: "⭐|☁️"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/youtube-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/youtube-icon.svg
   - name: Discord
     type: select
     include-all-proxies: true
@@ -889,7 +889,7 @@ proxy-groups:
       - Cloudflare
       - Relay-сервера
     filter: "🌍|⭐|☁️"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/discord-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/discord-icon.svg
   - name: Telegram
     type: select
     include-all-proxies: true
@@ -899,7 +899,7 @@ proxy-groups:
       - Cloudflare
       - Relay-сервера
     filter: "🌍|⭐|☁️"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/telegram-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/telegram-icon.svg
   - name: Meta
     type: select
     include-all-proxies: true
@@ -909,7 +909,7 @@ proxy-groups:
       - Cloudflare
       - Relay-сервера
     filter: "🌍|⭐|☁️"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/meta-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/meta-icon.svg
   - name: Геоблок
     type: select
     include-all-proxies: true
@@ -918,7 +918,7 @@ proxy-groups:
       - Relay-сервера
     filter: "🌍"
     exclude-filter: "🇷🇺"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/geoblock-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/geoblock-icon.svg
   - name: AI
     type: select
     include-all-proxies: true
@@ -927,7 +927,7 @@ proxy-groups:
       - Relay-сервера
     filter: "🌍"
     exclude-filter: "🇷🇺"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/openai-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/openai-icon.svg
   - name: Torrent
     type: select
     include-all-proxies: true
@@ -936,7 +936,7 @@ proxy-groups:
       - ⚡️ Авто
       - Cloudflare
     filter: "⭐|☁️"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/torrent-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/torrent-icon.svg
   - name: Все остальное
     type: select
     include-all-proxies: true
@@ -945,7 +945,7 @@ proxy-groups:
       - ⚡️ Авто
       - Cloudflare
     filter: "⭐|☁️"
-    icon: https://raw.githubusercontent.com/codelabhq/icons/main/main/global-icon.svg
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/global-icon.svg
   - name: ⚡️ Авто
     type: url-test
     tolerance: 150
