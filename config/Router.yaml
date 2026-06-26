@@ -438,9 +438,9 @@ rule-providers:
     interval: *default-interval
   meta:
     type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/meta.lst"
-    path: ./ruleset/meta.lst
+    behavior: classical
+    url: "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/meta.yaml"
+    path: ./ruleset/meta.yaml
     interval: *default-interval
   netflix:
     type: http
@@ -495,12 +495,11 @@ rule-providers:
     interval: *default-interval
     path: ./ruleset/discord-domain.yaml
   discord-ip:
-    behavior: ipcidr
+    behavior: classical
     type: http
-    format: text
-    url: "https://raw.githubusercontent.com/fildunsky/clash_discord/refs/heads/main/discord-ip.list"
+    url: "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/discord-cidr.yaml"
     interval: *default-interval
-    path: ./ruleset/discord-ip.list
+    path: ./ruleset/discord-cidr.yaml
   youtube:
     type: http
     behavior: classical
