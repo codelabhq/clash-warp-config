@@ -198,12 +198,11 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.yaml"
     path: ./ruleset/tiktok.yaml
     interval: *default-interval
-  google-ai:
+  ai:
     type: http
-    behavior: domain
-    format: text
-    url: "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/google_ai.lst"
-    path: ./ruleset/google_ai.lst
+    behavior: classical
+    url: "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/ai.yaml"
+    path: ./ruleset/ai_list.yaml
     interval: *default-interval
   HODCA: 
     type: http
@@ -309,18 +308,6 @@ rule-providers:
     behavior: domain
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Epic/Epic.yaml"
     path: ./ruleset/epic.yaml
-    interval: *default-interval
-  Claude:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.yaml"
-    path: ./ruleset/claude.yaml
-    interval: *default-interval
-  OpenAI:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.yaml"
-    path: ./ruleset/openai.yaml
     interval: *default-interval
   private-domains:
     type: http
@@ -539,11 +526,9 @@ rules:
 
   # === ОСТАЛЬНЫЕ СЕРВИСЫ ===
   - RULE-SET,netflix,Геоблок
-  - RULE-SET,google-ai,AI
-  - RULE-SET,OpenAI,AI
+  - RULE-SET,ai,AI
   - RULE-SET,discord-domain,Discord
   - RULE-SET,discord-ip,Discord
-  - RULE-SET,Claude,AI
   - RULE-SET,tiktok,Геоблок
   - RULE-SET,whatsapp,Meta,no-resolve
   - RULE-SET,meta,Meta
