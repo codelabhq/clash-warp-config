@@ -612,11 +612,19 @@ proxy-groups:
       - ⚡️ Авто
     filter: "⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/cloudflare-icon.svg
+  - name: Relay-сервера
+    type: select
+    include-all-proxies: true
+    proxies:
+      - 🔓 Без VPN
+    filter: "🌍"
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/relay-icon.svg
   - name: Обход качества Twitch
     type: select
     include-all-proxies: true
     proxies:
       - 🔓 Без VPN
+      - Relay-сервера
     filter: "🌍"
     exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/twitch-icon.svg
@@ -627,6 +635,7 @@ proxy-groups:
       - 🔓 Без VPN
       - ⚡️ Авто
       - Cloudflare
+      - Relay-сервера
     filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/steampowered-icon.svg
   - name: YouTube
@@ -645,6 +654,7 @@ proxy-groups:
       - 🔓 Без VPN
       - ⚡️ Авто
       - Cloudflare
+      - Relay-сервера
     filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/discord-icon.svg
   - name: Telegram
@@ -654,6 +664,7 @@ proxy-groups:
       - 🔓 Без VPN
       - ⚡️ Авто
       - Cloudflare
+      - Relay-сервера
     filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/telegram-icon.svg
   - name: Meta
@@ -663,6 +674,7 @@ proxy-groups:
       - 🔓 Без VPN
       - ⚡️ Авто
       - Cloudflare
+      - Relay-сервера
     filter: "🌍|⭐"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/meta-icon.svg
   - name: Геоблок
@@ -670,8 +682,7 @@ proxy-groups:
     include-all-proxies: true
     proxies:
       - 🔓 Без VPN
-      - ⚡️ Авто
-      - Cloudflare
+      - Relay-сервера
     filter: "🌍"
     exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/geoblock-icon.svg
@@ -680,6 +691,7 @@ proxy-groups:
     include-all-proxies: true
     proxies:
       - 🔓 Без VPN
+      - Relay-сервера
     filter: "🌍"
     exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/refs/heads/main/openai-icon.svg
