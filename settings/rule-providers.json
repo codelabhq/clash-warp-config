@@ -2,7 +2,7 @@
   {
     "name": "twitter",
     "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/twitter.yaml",
     "path": "./ruleset/twitter.yaml"
   },
   {
@@ -14,13 +14,13 @@
   {
     "name": "netflix",
     "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Netflix/Netflix_Classical.yaml",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/netflix.yaml",
     "path": "./ruleset/netflix.yaml"
   },
   {
     "name": "tiktok",
     "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.yaml",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/tiktok.yaml",
     "path": "./ruleset/tiktok.yaml"
   },
   {
@@ -37,30 +37,16 @@
     "path": "./ruleset/hodca.lst"
   },
   {
-    "name": "whatsapp",
-    "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp_No_Resolve.yaml",
-    "path": "./ruleset/whatsapp.yaml"
-  },
-  {
-    "name": "telegram-ip",
-    "behavior": "ipcidr",
-    "format": "mrs",
-    "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs",
-    "path": "./ruleset/telegram-ip.mrs"
-  },
-  {
     "name": "telegram",
-    "behavior": "domain",
-    "format": "mrs",
-    "url": "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/telegram.mrs",
-    "path": "./ruleset/telegram.mrs"
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/telegram.yaml",
+    "path": "./ruleset/telegram.yaml"
   },
   {
-    "name": "discord-domain",
+    "name": "discord",
     "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/fildunsky/clash_discord/refs/heads/main/discord-domain.yaml",
-    "path": "./ruleset/discord-domain.yaml"
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/discord.yaml",
+    "path": "./ruleset/discord.yaml"
   },
   {
     "name": "discord-ip",
@@ -71,37 +57,37 @@
   {
     "name": "youtube",
     "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.yaml",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/youtube.yaml",
     "path": "./ruleset/youtube.yaml"
   },
   {
     "name": "porno",
-    "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/porno.txt",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/porno.yaml",
     "path": "./ruleset/porno.yaml"
   },
   {
     "name": "torrent",
-    "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/torrent.txt",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/torrent.yaml",
     "path": "./ruleset/torrent.yaml"
   },
   {
     "name": "tools",
-    "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/tools.txt",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/tools.yaml",
     "path": "./ruleset/tools.yaml"
   },
   {
     "name": "socials",
-    "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/socials.txt",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/socials.yaml",
     "path": "./ruleset/socials.yaml"
   },
   {
     "name": "music",
-    "behavior": "domain",
-    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/music.txt",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/music.yaml",
     "path": "./ruleset/music.yaml"
   },
   {
@@ -173,8 +159,7 @@
   {
     "name": "ru-apps",
     "behavior": "classical",
-    "format": "yaml",
-    "url": "https://raw.githubusercontent.com/roscomvpn/custom-category/release/mihomo/ru-apps.yaml",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/ru-apps.yaml",
     "path": "./ruleset/ru-apps.yaml",
     "devices": ["mobile"]
   }

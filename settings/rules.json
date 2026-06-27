@@ -3,7 +3,6 @@
   { "rule": "RULE-SET,private-domains,DIRECT" },
 
   { "comment": "=== TELEGRAM ===" },
-  { "rule": "RULE-SET,telegram-ip,Telegram" },
   { "rule": "RULE-SET,telegram,Telegram" },
 
   { "comment": "=== БЛОКИРОВКА БЕСПОЛЕЗНОЙ РЕКЛАМЫ TWITCH (ТО, ЧТО ЕЩЁ МОЖНО ЗАБЛОКИРОВАТЬ) ===" },
@@ -27,24 +26,28 @@
   { "rule": "RULE-SET,whitelist,DIRECT" },
 
   { "comment": "=== ОСТАЛЬНЫЕ СЕРВИСЫ ===" },
-  { "rule": "RULE-SET,netflix,Геоблок" },
-  { "rule": "RULE-SET,ai,AI" },
-  { "rule": "RULE-SET,discord-domain,Discord" },
-  { "rule": "RULE-SET,discord-ip,Discord" },
-  { "rule": "RULE-SET,tiktok,Геоблок" },
-  { "rule": "RULE-SET,whatsapp,Meta,no-resolve" },
-  { "rule": "RULE-SET,meta,Meta" },
   { "rule": "RULE-SET,youtube,YouTube" },
+  { "rule": "RULE-SET,discord,Discord" },
+  { "rule": "RULE-SET,discord-ip,Discord" },
+  { "rule": "RULE-SET,ai,AI" },
+
+  { "rule": "RULE-SET,meta,Meta,no-resolve" },
+
+  { "rule": "RULE-SET,twitter,Геоблок" },
+  { "rule": "RULE-SET,tiktok,Геоблок" },
+  { "rule": "RULE-SET,netflix,Геоблок" },
+
   { "rule": "RULE-SET,porno,Геоблок" },
   { "rule": "RULE-SET,torrent,Torrent" },
   { "rule": "RULE-SET,tools,Геоблок" },
   { "rule": "RULE-SET,socials,Геоблок" },
-  { "rule": "RULE-SET,twitter,AI" },
   { "rule": "RULE-SET,music,Геоблок" },
+  
   { "rule": "RULE-SET,Ubisoft,Игры" },
   { "rule": "RULE-SET,EA,Игры" },
   { "rule": "RULE-SET,Blizzard,Игры" },
   { "rule": "RULE-SET,Epic,Игры" },
+
   { "rule": "DOMAIN-KEYWORD,notion,Геоблок" },
   { "rule": "DOMAIN-SUFFIX,ntc.party,PROXY" },
 
@@ -59,7 +62,7 @@
 
   { "comment": "=== ОБХОД БЛОКИРОВОК РКН ===" },
   { "rule": "RULE-SET,HODCA,PROXY" },
-  { "rule": "RULE-SET,direct-ips,DIRECT" },
+  { "rule": "RULE-SET,direct-ips,DIRECT,no-resolve" },
 
   { "comment": "=== ВСЁ ОСТАЛЬНОЕ ===" },
   { "rule": "MATCH,Все остальное" }
