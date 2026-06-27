@@ -736,6 +736,11 @@ rules:
   - RULE-SET,private-ips,DIRECT,no-resolve
   - RULE-SET,private-domains,DIRECT
 
+  # === РУССКИЕ САЙТЫ И ПРИЛОЖЕНИЯ ===
+  - RULE-SET,category-ru,DIRECT
+  - RULE-SET,whitelist,DIRECT
+  - RULE-SET,direct-ips,DIRECT,no-resolve
+
   # === TELEGRAM ===
   - RULE-SET,telegram,Telegram
 
@@ -753,10 +758,6 @@ rules:
   - DOMAIN-SUFFIX,twitch.tv,DIRECT
   - DOMAIN-SUFFIX,ttvnw.net,DIRECT
   - DOMAIN-SUFFIX,jtvnw.net,DIRECT
-
-  # === РУССКИЕ САЙТЫ И ПРИЛОЖЕНИЯ ===
-  - RULE-SET,category-ru,DIRECT
-  - RULE-SET,whitelist,DIRECT
 
   # === ОСТАЛЬНЫЕ СЕРВИСЫ ===
   - RULE-SET,youtube,YouTube
@@ -790,7 +791,6 @@ rules:
 
   # === ОБХОД БЛОКИРОВОК РКН ===
   - RULE-SET,HODCA,PROXY
-  - RULE-SET,direct-ips,DIRECT,no-resolve
 
   # === ВСЁ ОСТАЛЬНОЕ ===
   - MATCH,Все остальное
