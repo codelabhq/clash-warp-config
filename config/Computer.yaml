@@ -656,7 +656,7 @@ rule-providers:
   twitter:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/twitter.yaml
     path: ./ruleset/twitter.yaml
     interval: *default-interval
   meta:
@@ -668,13 +668,13 @@ rule-providers:
   netflix:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Netflix/Netflix_Classical.yaml
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/netflix.yaml
     path: ./ruleset/netflix.yaml
     interval: *default-interval
   tiktok:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.yaml
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/tiktok.yaml
     path: ./ruleset/tiktok.yaml
     interval: *default-interval
   ai:
@@ -690,31 +690,17 @@ rule-providers:
     url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/hodca.lst
     path: ./ruleset/hodca.lst
     interval: *default-interval
-  whatsapp:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp_No_Resolve.yaml
-    path: ./ruleset/whatsapp.yaml
-    interval: *default-interval
-  telegram-ip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs
-    path: ./ruleset/telegram-ip.mrs
-    interval: *default-interval
   telegram:
     type: http
-    behavior: domain
-    format: mrs
-    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/telegram.mrs
-    path: ./ruleset/telegram.mrs
+    behavior: classical
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/telegram.yaml
+    path: ./ruleset/telegram.yaml
     interval: *default-interval
-  discord-domain:
+  discord:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/fildunsky/clash_discord/refs/heads/main/discord-domain.yaml
-    path: ./ruleset/discord-domain.yaml
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/discord.yaml
+    path: ./ruleset/discord.yaml
     interval: *default-interval
   discord-ip:
     type: http
@@ -725,37 +711,37 @@ rule-providers:
   youtube:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.yaml
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/youtube.yaml
     path: ./ruleset/youtube.yaml
     interval: *default-interval
   porno:
     type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/porno.txt
+    behavior: classical
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/porno.yaml
     path: ./ruleset/porno.yaml
     interval: *default-interval
   torrent:
     type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/torrent.txt
+    behavior: classical
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/torrent.yaml
     path: ./ruleset/torrent.yaml
     interval: *default-interval
   tools:
     type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/tools.txt
+    behavior: classical
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/tools.yaml
     path: ./ruleset/tools.yaml
     interval: *default-interval
   socials:
     type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/socials.txt
+    behavior: classical
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/socials.yaml
     path: ./ruleset/socials.yaml
     interval: *default-interval
   music:
     type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/music.txt
+    behavior: classical
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/music.yaml
     path: ./ruleset/music.yaml
     interval: *default-interval
   Steam:
@@ -977,7 +963,6 @@ rules:
   - RULE-SET,private-domains,DIRECT
 
   # === TELEGRAM ===
-  - RULE-SET,telegram-ip,Telegram
   - RULE-SET,telegram,Telegram
 
   # === БЛОКИРОВКА БЕСПОЛЕЗНОЙ РЕКЛАМЫ TWITCH (ТО, ЧТО ЕЩЁ МОЖНО ЗАБЛОКИРОВАТЬ) ===
@@ -1000,19 +985,18 @@ rules:
   - RULE-SET,whitelist,DIRECT
 
   # === ОСТАЛЬНЫЕ СЕРВИСЫ ===
-  - RULE-SET,netflix,Геоблок
-  - RULE-SET,ai,AI
-  - RULE-SET,discord-domain,Discord
-  - RULE-SET,discord-ip,Discord
-  - RULE-SET,tiktok,Геоблок
-  - RULE-SET,whatsapp,Meta,no-resolve
-  - RULE-SET,meta,Meta
   - RULE-SET,youtube,YouTube
+  - RULE-SET,discord,Discord
+  - RULE-SET,discord-ip,Discord
+  - RULE-SET,ai,AI
+  - RULE-SET,meta,Meta,no-resolve
+  - RULE-SET,twitter,Геоблок
+  - RULE-SET,tiktok,Геоблок
+  - RULE-SET,netflix,Геоблок
   - RULE-SET,porno,Геоблок
   - RULE-SET,torrent,Torrent
   - RULE-SET,tools,Геоблок
   - RULE-SET,socials,Геоблок
-  - RULE-SET,twitter,AI
   - RULE-SET,music,Геоблок
   - RULE-SET,Ubisoft,Игры
   - RULE-SET,EA,Игры
@@ -1032,7 +1016,7 @@ rules:
 
   # === ОБХОД БЛОКИРОВОК РКН ===
   - RULE-SET,HODCA,PROXY
-  - RULE-SET,direct-ips,DIRECT
+  - RULE-SET,direct-ips,DIRECT,no-resolve
 
   # === ВСЁ ОСТАЛЬНОЕ ===
   - MATCH,Все остальное
