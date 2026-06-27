@@ -17,6 +17,15 @@
     "icon": "https://raw.githubusercontent.com/codelabhq/icons/main/relay-icon.svg"
   },
   {
+    "name": "🛸 LOCAL-PROXY",
+    "type": "select",
+    "include-all-proxies": true,
+    "proxies": ["🔓 Без VPN", "⚡️ Авто", "Cloudflare", "Relay-сервера"],
+    "filter": "🌍|⭐",
+    "overrides": { "pc": { "filter": "🌍|⭐|☁️" } },
+    "icon": "https://raw.githubusercontent.com/codelabhq/icons/main/proxy-icon.svg"
+  },
+  {
     "name": "Обход качества Twitch",
     "type": "select",
     "include-all-proxies": true,
@@ -140,12 +149,5 @@
     "type": "select",
     "hidden": true,
     "proxies": ["PASS"]
-  },
-  {
-    "name": "LOCAL-SOCKS",
-    "type": "select",
-    "hidden": true,
-    "proxies": ["Cloudflare"],
-    "devices": ["pc", "mobile"]
   }
 ]

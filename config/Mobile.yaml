@@ -38,7 +38,7 @@ listeners:
     port: 1984
     listen: 127.0.0.1
     udp: true
-    proxy: LOCAL-SOCKS
+    proxy: 🛸 LOCAL-PROXY
 
 x-default-interval: &default-interval 86400
 x-check-interval: &check-interval 300
@@ -357,6 +357,16 @@ proxy-groups:
       - 🔓 Без VPN
     filter: "🌍"
     icon: https://raw.githubusercontent.com/codelabhq/icons/main/relay-icon.svg
+  - name: 🛸 LOCAL-PROXY
+    type: select
+    include-all-proxies: true
+    proxies:
+      - 🔓 Без VPN
+      - ⚡️ Авто
+      - Cloudflare
+      - Relay-сервера
+    filter: "🌍|⭐"
+    icon: https://raw.githubusercontent.com/codelabhq/icons/main/proxy-icon.svg
   - name: Обход качества Twitch
     type: select
     include-all-proxies: true
@@ -479,11 +489,6 @@ proxy-groups:
     hidden: true
     proxies:
       - PASS
-  - name: LOCAL-SOCKS
-    type: select
-    hidden: true
-    proxies:
-      - Cloudflare
 # === END PROXY-GROUPS ===
 
 # === BEGIN RULES (auto-generated from settings/rules.json — do not edit) ===
