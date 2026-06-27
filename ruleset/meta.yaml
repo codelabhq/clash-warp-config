@@ -1,19 +1,64 @@
 payload:
-  - DOMAIN-SUFFIX,instagram.com
-  - DOMAIN-SUFFIX,ig.me
-  - DOMAIN-SUFFIX,facebook.com
-  - DOMAIN-SUFFIX,facebook.net
-  - DOMAIN-SUFFIX,cdninstagram.com
-  - DOMAIN-SUFFIX,fbcdn.net
-  - DOMAIN-SUFFIX,fbsbx.com
-  - DOMAIN-SUFFIX,internalfb.com
-  - DOMAIN-SUFFIX,oculus.com
-  - DOMAIN-SUFFIX,meta.com
+  # === THREADS ===
   - DOMAIN-SUFFIX,threads.net
   - DOMAIN-SUFFIX,threads.com
-  - DOMAIN-SUFFIX,fb.com
-  - DOMAIN-SUFFIX,whatsapp.com
-  - DOMAIN-SUFFIX,whatsapp.net
-  - DOMAIN-SUFFIX,whatsapp.biz
-  - DOMAIN-SUFFIX,wa.me
+  # === СЛУЖЕБНЫЕ ДОМЕНЫ META (Включая маскировочные CDN) ===
+  - DOMAIN-SUFFIX,meta.com
+  - DOMAIN-SUFFIX,internalfb.com
   - DOMAIN-SUFFIX,circlecrewpinkcrowd.com
+  - DOMAIN-SUFFIX,metacareers.com
+  # === OCULUS / META QUEST (Полный список для VR) ===
+  - DOMAIN-SUFFIX,oculus.com
+  - DOMAIN-SUFFIX,oculuscdn.com
+  - DOMAIN-SUFFIX,oculus.net
+  - DOMAIN-SUFFIX,quest.com
+  - DOMAIN-KEYWORD,oculus
+  - DOMAIN-KEYWORD,qvr
+  # messenger.com
+  - DOMAIN-SUFFIX,messenger.com
+  # whatsapp.com
+  - DOMAIN-SUFFIX,wa.me
+  - DOMAIN-SUFFIX,whatsapp-plus.info
+  - DOMAIN-SUFFIX,whatsapp-plus.me
+  - DOMAIN-SUFFIX,whatsapp-plus.net
+  - DOMAIN-SUFFIX,whatsapp.biz
+  - DOMAIN-SUFFIX,whatsapp.cc
+  - DOMAIN-SUFFIX,whatsapp.com
+  - DOMAIN-SUFFIX,whatsapp.info
+  - DOMAIN-SUFFIX,whatsapp.net
+  - DOMAIN-SUFFIX,whatsapp.org
+  - DOMAIN-SUFFIX,whatsapp.tv
+  - DOMAIN-SUFFIX,whatsappbrand.com
+  - DOMAIN-SUFFIX,wl.co
+  - DOMAIN,graph.facebook.com
+  - DOMAIN-SUFFIX,bintray.com
+  - DOMAIN-KEYWORD,whatsapp
+  - IP-CIDR,158.85.224.160/27,no-resolve
+  - IP-CIDR,158.85.46.128/27,no-resolve
+  - IP-CIDR,158.85.5.192/27,no-resolve
+  - IP-CIDR,173.192.222.160/27,no-resolve
+  - IP-CIDR,173.192.231.32/27,no-resolve
+  - IP-CIDR,18.194.0.0/15,no-resolve
+  - IP-CIDR,184.173.128.0/17,no-resolve
+  - IP-CIDR,208.43.122.128/27,no-resolve
+  - IP-CIDR,34.224.0.0/12,no-resolve
+  - IP-CIDR,50.22.198.204/30,no-resolve
+  - IP-CIDR,54.242.0.0/15,no-resolve
+  # facebook.com
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,facebook.com.es
+  - DOMAIN-SUFFIX,facebook.com.vn
+  - DOMAIN-SUFFIX,facebook.fr
+  - DOMAIN-SUFFIX,facebook.net
+  - DOMAIN-SUFFIX,fb.com
+  - DOMAIN-SUFFIX,fb.me
+  - DOMAIN-SUFFIX,fbcdn.net
+  - DOMAIN-SUFFIX,fbsbx.com
+  - DOMAIN,static-exp1.licdn.com
+  - DOMAIN-SUFFIX,tfbnw.net
+  - DOMAIN-SUFFIX,thefacebook.com
+  # instagram.com
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,fbcdn.com
+  - DOMAIN-SUFFIX,ig.me
+  - DOMAIN-SUFFIX,instagram.com
