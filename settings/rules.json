@@ -1,6 +1,11 @@
 [
   { "rule": "RULE-SET,private-ips,DIRECT,no-resolve" },
   { "rule": "RULE-SET,private-domains,DIRECT" },
+  { "comment": "=== РУССКИЕ САЙТЫ И ПРИЛОЖЕНИЯ ===" },
+  { "rule": "RULE-SET,ru-apps,DIRECT", "devices": ["mobile"] },
+  { "rule": "RULE-SET,category-ru,DIRECT" },
+  { "rule": "RULE-SET,whitelist,DIRECT" },
+  { "rule": "RULE-SET,direct-ips,DIRECT,no-resolve" },
 
   { "comment": "=== TELEGRAM ===" },
   { "rule": "RULE-SET,telegram,Telegram" },
@@ -19,11 +24,6 @@
   { "rule": "DOMAIN-SUFFIX,twitch.tv,DIRECT" },
   { "rule": "DOMAIN-SUFFIX,ttvnw.net,DIRECT" },
   { "rule": "DOMAIN-SUFFIX,jtvnw.net,DIRECT" },
-
-  { "comment": "=== РУССКИЕ САЙТЫ И ПРИЛОЖЕНИЯ ===" },
-  { "rule": "RULE-SET,ru-apps,DIRECT", "devices": ["mobile"] },
-  { "rule": "RULE-SET,category-ru,DIRECT" },
-  { "rule": "RULE-SET,whitelist,DIRECT" },
 
   { "comment": "=== ОСТАЛЬНЫЕ СЕРВИСЫ ===" },
   { "rule": "RULE-SET,youtube,YouTube" },
@@ -62,7 +62,6 @@
 
   { "comment": "=== ОБХОД БЛОКИРОВОК РКН ===" },
   { "rule": "RULE-SET,HODCA,PROXY" },
-  { "rule": "RULE-SET,direct-ips,DIRECT,no-resolve" },
 
   { "comment": "=== ВСЁ ОСТАЛЬНОЕ ===" },
   { "rule": "MATCH,Все остальное" }
