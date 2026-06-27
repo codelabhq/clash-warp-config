@@ -1,0 +1,181 @@
+[
+  {
+    "name": "twitter",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml",
+    "path": "./ruleset/twitter.yaml"
+  },
+  {
+    "name": "meta",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/meta.yaml",
+    "path": "./ruleset/meta.yaml"
+  },
+  {
+    "name": "netflix",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Netflix/Netflix_Classical.yaml",
+    "path": "./ruleset/netflix.yaml"
+  },
+  {
+    "name": "tiktok",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.yaml",
+    "path": "./ruleset/tiktok.yaml"
+  },
+  {
+    "name": "ai",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/ai.yaml",
+    "path": "./ruleset/ai_list.yaml"
+  },
+  {
+    "name": "HODCA",
+    "behavior": "domain",
+    "format": "text",
+    "url": "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/hodca.lst",
+    "path": "./ruleset/hodca.lst"
+  },
+  {
+    "name": "whatsapp",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp_No_Resolve.yaml",
+    "path": "./ruleset/whatsapp.yaml"
+  },
+  {
+    "name": "telegram-ip",
+    "behavior": "ipcidr",
+    "format": "mrs",
+    "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs",
+    "path": "./ruleset/telegram-ip.mrs"
+  },
+  {
+    "name": "telegram",
+    "behavior": "domain",
+    "format": "mrs",
+    "url": "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/telegram.mrs",
+    "path": "./ruleset/telegram.mrs"
+  },
+  {
+    "name": "discord-domain",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/fildunsky/clash_discord/refs/heads/main/discord-domain.yaml",
+    "path": "./ruleset/discord-domain.yaml"
+  },
+  {
+    "name": "discord-ip",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/discord-cidr.yaml",
+    "path": "./ruleset/discord-cidr.yaml"
+  },
+  {
+    "name": "youtube",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.yaml",
+    "path": "./ruleset/youtube.yaml"
+  },
+  {
+    "name": "porno",
+    "behavior": "domain",
+    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/porno.txt",
+    "path": "./ruleset/porno.yaml"
+  },
+  {
+    "name": "torrent",
+    "behavior": "domain",
+    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/torrent.txt",
+    "path": "./ruleset/torrent.yaml"
+  },
+  {
+    "name": "tools",
+    "behavior": "domain",
+    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/tools.txt",
+    "path": "./ruleset/tools.yaml"
+  },
+  {
+    "name": "socials",
+    "behavior": "domain",
+    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/socials.txt",
+    "path": "./ruleset/socials.yaml"
+  },
+  {
+    "name": "music",
+    "behavior": "domain",
+    "url": "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/music.txt",
+    "path": "./ruleset/music.yaml"
+  },
+  {
+    "name": "Steam",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Steam/Steam.yaml",
+    "path": "./ruleset/steam.yaml"
+  },
+  {
+    "name": "EA",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/EA/EA.yaml",
+    "path": "./ruleset/ea.yaml"
+  },
+  {
+    "name": "Blizzard",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Blizzard/Blizzard.yaml",
+    "path": "./ruleset/blizzard.yaml"
+  },
+  {
+    "name": "Ubisoft",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Ubisoft/Ubisoft.yaml",
+    "path": "./ruleset/ubisoft.yaml"
+  },
+  {
+    "name": "Epic",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Epic/Epic.yaml",
+    "path": "./ruleset/epic.yaml"
+  },
+  {
+    "name": "private-domains",
+    "behavior": "domain",
+    "format": "mrs",
+    "url": "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/private.mrs",
+    "path": "./ruleset/geosite-private.mrs"
+  },
+  {
+    "name": "category-ru",
+    "behavior": "domain",
+    "format": "mrs",
+    "url": "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/category-ru.mrs",
+    "path": "./ruleset/category-ru.mrs"
+  },
+  {
+    "name": "whitelist",
+    "behavior": "domain",
+    "format": "mrs",
+    "url": "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/whitelist.mrs",
+    "path": "./ruleset/whitelist.mrs"
+  },
+  {
+    "name": "private-ips",
+    "behavior": "ipcidr",
+    "format": "mrs",
+    "url": "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip/release/mihomo/private.mrs",
+    "path": "./ruleset/geoip-private.mrs",
+    "interval": 2592000
+  },
+  {
+    "name": "direct-ips",
+    "behavior": "ipcidr",
+    "format": "mrs",
+    "url": "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip/release/mihomo/direct.mrs",
+    "path": "./ruleset/direct-ips.mrs"
+  },
+  {
+    "name": "ru-apps",
+    "behavior": "classical",
+    "format": "yaml",
+    "url": "https://raw.githubusercontent.com/roscomvpn/custom-category/release/mihomo/ru-apps.yaml",
+    "path": "./ruleset/ru-apps.yaml",
+    "devices": ["mobile"]
+  }
+]

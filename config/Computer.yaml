@@ -1,4 +1,4 @@
-# === BEGIN AMNEZIA ANCHORS (auto-generated from proxies/amnezia.yaml — do not edit) ===
+# === BEGIN AMNEZIA ANCHORS (auto-generated from settings/amnezia.yaml — do not edit) ===
 amnezia-common: &amnezia-common
   jc: 4
   jmin: 40
@@ -44,6 +44,7 @@ x-default-interval: &default-interval 86400
 x-check-interval: &check-interval 300
 x-health-url: &health-url http://speed.cloudflare.com/
 
+# device: pc
 # warp-types: geo origin default
 proxies:
 # === BEGIN WARP PROXIES (auto-generated from proxies/*.yaml — do not edit) ===
@@ -650,140 +651,141 @@ proxies:
     port: 500
 # === END WARP PROXIES ===
 
+# === BEGIN RULE-PROVIDERS (auto-generated from settings/rule-providers.json — do not edit) ===
 rule-providers:
   twitter:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml
     path: ./ruleset/twitter.yaml
     interval: *default-interval
   meta:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/meta.yaml"
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/meta.yaml
     path: ./ruleset/meta.yaml
     interval: *default-interval
   netflix:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Netflix/Netflix_Classical.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Netflix/Netflix_Classical.yaml
     path: ./ruleset/netflix.yaml
     interval: *default-interval
   tiktok:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.yaml
     path: ./ruleset/tiktok.yaml
     interval: *default-interval
   ai:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/ai.yaml"
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/ai.yaml
     path: ./ruleset/ai_list.yaml
     interval: *default-interval
-  HODCA: 
+  HODCA:
     type: http
     behavior: domain
     format: text
-    url: "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/hodca.lst"
+    url: https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/hodca.lst
     path: ./ruleset/hodca.lst
     interval: *default-interval
   whatsapp:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp_No_Resolve.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp_No_Resolve.yaml
     path: ./ruleset/whatsapp.yaml
     interval: *default-interval
   telegram-ip:
     type: http
     behavior: ipcidr
     format: mrs
-    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs"
+    url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs
     path: ./ruleset/telegram-ip.mrs
     interval: *default-interval
   telegram:
     type: http
     behavior: domain
     format: mrs
-    url: "https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/telegram.mrs"
+    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite/release/mihomo/telegram.mrs
     path: ./ruleset/telegram.mrs
     interval: *default-interval
   discord-domain:
-    behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fildunsky/clash_discord/refs/heads/main/discord-domain.yaml"
-    interval: *default-interval
+    behavior: classical
+    url: https://raw.githubusercontent.com/fildunsky/clash_discord/refs/heads/main/discord-domain.yaml
     path: ./ruleset/discord-domain.yaml
-  discord-ip:
-    behavior: classical
-    type: http
-    url: "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/discord-cidr.yaml"
     interval: *default-interval
+  discord-ip:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/discord-cidr.yaml
     path: ./ruleset/discord-cidr.yaml
+    interval: *default-interval
   youtube:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.yaml
     path: ./ruleset/youtube.yaml
     interval: *default-interval
   porno:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/porno.txt"
+    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/porno.txt
     path: ./ruleset/porno.yaml
     interval: *default-interval
   torrent:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/torrent.txt"
+    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/torrent.txt
     path: ./ruleset/torrent.yaml
     interval: *default-interval
   tools:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/tools.txt"
+    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/tools.txt
     path: ./ruleset/tools.yaml
     interval: *default-interval
   socials:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/socials.txt"
+    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/socials.txt
     path: ./ruleset/socials.yaml
     interval: *default-interval
   music:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/music.txt"
+    url: https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/music.txt
     path: ./ruleset/music.yaml
     interval: *default-interval
   Steam:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Steam/Steam.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Steam/Steam.yaml
     path: ./ruleset/steam.yaml
     interval: *default-interval
   EA:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/EA/EA.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/EA/EA.yaml
     path: ./ruleset/ea.yaml
     interval: *default-interval
   Blizzard:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Blizzard/Blizzard.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Blizzard/Blizzard.yaml
     path: ./ruleset/blizzard.yaml
     interval: *default-interval
   Ubisoft:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Ubisoft/Ubisoft.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Ubisoft/Ubisoft.yaml
     path: ./ruleset/ubisoft.yaml
     interval: *default-interval
   Epic:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Epic/Epic.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Epic/Epic.yaml
     path: ./ruleset/epic.yaml
     interval: *default-interval
   private-domains:
@@ -821,7 +823,9 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geoip/release/mihomo/direct.mrs
     path: ./ruleset/direct-ips.mrs
     interval: *default-interval
+# === END RULE-PROVIDERS ===
 
+# === BEGIN PROXY-GROUPS (auto-generated from settings/proxy-groups.json — do not edit) ===
 proxy-groups:
   - name: Cloudflare
     type: select
@@ -965,7 +969,9 @@ proxy-groups:
     hidden: true
     proxies:
       - Cloudflare
+# === END PROXY-GROUPS ===
 
+# === BEGIN RULES (auto-generated from settings/rules.json — do not edit) ===
 rules:
   - RULE-SET,private-ips,DIRECT,no-resolve
   - RULE-SET,private-domains,DIRECT
@@ -1026,7 +1032,8 @@ rules:
 
   # === ОБХОД БЛОКИРОВОК РКН ===
   - RULE-SET,HODCA,PROXY
-
   - RULE-SET,direct-ips,DIRECT
-  # === ВСЁ ОСТАЛЬНОЕ ==
+
+  # === ВСЁ ОСТАЛЬНОЕ ===
   - MATCH,Все остальное
+# === END RULES ===

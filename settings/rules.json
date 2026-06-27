@@ -1,0 +1,66 @@
+[
+  { "rule": "RULE-SET,private-ips,DIRECT,no-resolve" },
+  { "rule": "RULE-SET,private-domains,DIRECT" },
+
+  { "comment": "=== TELEGRAM ===" },
+  { "rule": "RULE-SET,telegram-ip,Telegram" },
+  { "rule": "RULE-SET,telegram,Telegram" },
+
+  { "comment": "=== БЛОКИРОВКА БЕСПОЛЕЗНОЙ РЕКЛАМЫ TWITCH (ТО, ЧТО ЕЩЁ МОЖНО ЗАБЛОКИРОВАТЬ) ===" },
+  { "rule": "DOMAIN-SUFFIX,adserver.twitch.tv,REJECT" },
+  { "rule": "DOMAIN-SUFFIX,ads.twitch.tv,REJECT" },
+  { "rule": "DOMAIN-KEYWORD,twitch-ads,REJECT" },
+  { "rule": "DOMAIN-KEYWORD,amazon-adsystem,REJECT" },
+
+  { "comment": "=== ОБХОД ОГРАНИЧЕНИЯ КАЧЕСТВА TWITCH (ЧЕРЕЗ ПРОКСИ) ===" },
+  { "rule": "DOMAIN-SUFFIX,usher.ttvnw.net,Обход качества Twitch" },
+  { "rule": "DOMAIN-SUFFIX,gql.twitch.tv,Обход качества Twitch" },
+
+  { "comment": "=== ОСТАЛЬНОЙ ТРАФИК TWITCH (ВИДЕО, ЧАТ) — НАПРЯМУЮ ===" },
+  { "rule": "DOMAIN-SUFFIX,twitch.tv,DIRECT" },
+  { "rule": "DOMAIN-SUFFIX,ttvnw.net,DIRECT" },
+  { "rule": "DOMAIN-SUFFIX,jtvnw.net,DIRECT" },
+
+  { "comment": "=== РУССКИЕ САЙТЫ И ПРИЛОЖЕНИЯ ===" },
+  { "rule": "RULE-SET,ru-apps,DIRECT", "devices": ["mobile"] },
+  { "rule": "RULE-SET,category-ru,DIRECT" },
+  { "rule": "RULE-SET,whitelist,DIRECT" },
+
+  { "comment": "=== ОСТАЛЬНЫЕ СЕРВИСЫ ===" },
+  { "rule": "RULE-SET,netflix,Геоблок" },
+  { "rule": "RULE-SET,ai,AI" },
+  { "rule": "RULE-SET,discord-domain,Discord" },
+  { "rule": "RULE-SET,discord-ip,Discord" },
+  { "rule": "RULE-SET,tiktok,Геоблок" },
+  { "rule": "RULE-SET,whatsapp,Meta,no-resolve" },
+  { "rule": "RULE-SET,meta,Meta" },
+  { "rule": "RULE-SET,youtube,YouTube" },
+  { "rule": "RULE-SET,porno,Геоблок" },
+  { "rule": "RULE-SET,torrent,Torrent" },
+  { "rule": "RULE-SET,tools,Геоблок" },
+  { "rule": "RULE-SET,socials,Геоблок" },
+  { "rule": "RULE-SET,twitter,AI" },
+  { "rule": "RULE-SET,music,Геоблок" },
+  { "rule": "RULE-SET,Ubisoft,Игры" },
+  { "rule": "RULE-SET,EA,Игры" },
+  { "rule": "RULE-SET,Blizzard,Игры" },
+  { "rule": "RULE-SET,Epic,Игры" },
+  { "rule": "DOMAIN-KEYWORD,notion,Геоблок" },
+  { "rule": "DOMAIN-SUFFIX,ntc.party,PROXY" },
+
+  { "comment": "Вручную направляем Activision и матчмейкинг через нужный прокси" },
+  { "rule": "DOMAIN-SUFFIX,activision.com,Игры" },
+  { "rule": "DOMAIN-SUFFIX,callofduty.com,Игры" },
+  { "rule": "DOMAIN-SUFFIX,demonware.net,Игры" },
+  { "rule": "DOMAIN-SUFFIX,mw3.demonware.net,Игры" },
+
+  { "comment": "Домены для которых жалко создавать RULE-SET" },
+  { "rule": "DOMAIN-SUFFIX,apple.com,PROXY" },
+
+  { "comment": "=== ОБХОД БЛОКИРОВОК РКН ===" },
+  { "rule": "RULE-SET,HODCA,PROXY" },
+  { "rule": "RULE-SET,direct-ips,DIRECT" },
+
+  { "comment": "=== ВСЁ ОСТАЛЬНОЕ ===" },
+  { "rule": "MATCH,Все остальное" }
+]

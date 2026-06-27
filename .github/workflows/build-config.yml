@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'proxies/**'
+      - 'settings/**'
       - 'scripts/build_config.py'
       - '.github/workflows/build-config.yml'
   workflow_dispatch:
