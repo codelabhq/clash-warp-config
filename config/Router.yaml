@@ -580,7 +580,6 @@ rules:
   # === ОСТАЛЬНЫЕ СЕРВИСЫ ===
   - RULE-SET,youtube,YouTube
   - RULE-SET,discord,Discord
-  - RULE-SET,discord-ip,Discord
   - RULE-SET,ai,AI
   - RULE-SET,meta,Meta,no-resolve
   - RULE-SET,twitter,Геоблок
@@ -611,5 +610,6 @@ rules:
   - RULE-SET,HODCA,PROXY
 
   # === ВСЁ ОСТАЛЬНОЕ ===
+  - RULE-SET,discord-ip,Discord
   - MATCH,Все остальное
 # === END RULES ===
