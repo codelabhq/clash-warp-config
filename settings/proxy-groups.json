@@ -30,7 +30,7 @@
     "type": "select",
     "include-all-proxies": true,
     "proxies": ["🔓 Без VPN", "Relay-сервера"],
-    "filter": "🌍",
+    "filter": "🌍|🎭",
     "exclude-filter": "🇷🇺",
     "icon": "https://raw.githubusercontent.com/codelabhq/icons/main/twitch-icon.svg"
   },
@@ -84,7 +84,7 @@
     "type": "select",
     "include-all-proxies": true,
     "proxies": ["🔓 Без VPN", "Relay-сервера"],
-    "filter": "🌍",
+    "filter": "🌍|🎭",
     "exclude-filter": "🇷🇺",
     "icon": "https://raw.githubusercontent.com/codelabhq/icons/main/geoblock-icon.svg"
   },
@@ -93,7 +93,7 @@
     "type": "select",
     "include-all-proxies": true,
     "proxies": ["🔓 Без VPN", "Relay-сервера"],
-    "filter": "🌍",
+    "filter": "🌍|🎭",
     "exclude-filter": "🇷🇺",
     "icon": "https://raw.githubusercontent.com/codelabhq/icons/main/openai-icon.svg"
   },
