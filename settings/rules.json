@@ -28,7 +28,6 @@
   { "comment": "=== ОСТАЛЬНЫЕ СЕРВИСЫ ===" },
   { "rule": "RULE-SET,youtube,YouTube" },
   { "rule": "RULE-SET,discord,Discord" },
-  { "rule": "RULE-SET,discord-ip,Discord" },
   { "rule": "RULE-SET,ai,AI" },
 
   { "rule": "RULE-SET,meta,Meta,no-resolve" },
@@ -64,5 +63,6 @@
   { "rule": "RULE-SET,HODCA,PROXY" },
 
   { "comment": "=== ВСЁ ОСТАЛЬНОЕ ===" },
+  { "rule": "RULE-SET,discord-ip,Discord" },
   { "rule": "MATCH,Все остальное" }
 ]
