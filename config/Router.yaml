@@ -431,7 +431,7 @@ proxy-groups:
     proxies:
       - 🔓 Без VPN
       - Relay-сервера
-    filter: "🌍"
+    filter: "🌍|🎭"
     exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/main/twitch-icon.svg
   - name: Игры
@@ -489,7 +489,7 @@ proxy-groups:
     proxies:
       - 🔓 Без VPN
       - Relay-сервера
-    filter: "🌍"
+    filter: "🌍|🎭"
     exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/main/geoblock-icon.svg
   - name: AI
@@ -498,7 +498,7 @@ proxy-groups:
     proxies:
       - 🔓 Без VPN
       - Relay-сервера
-    filter: "🌍"
+    filter: "🌍|🎭"
     exclude-filter: "🇷🇺"
     icon: https://raw.githubusercontent.com/codelabhq/icons/main/openai-icon.svg
   - name: Torrent
