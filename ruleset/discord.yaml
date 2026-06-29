@@ -49,3 +49,12 @@ payload:
   - DOMAIN-SUFFIX,discord.app
   - DOMAIN-SUFFIX,discord-attachments-uploads-prd.storage.googleapis.com
   - DOMAIN-SUFFIX,cloudflare-ech.com
+  - PROCESS-NAME-REGEX,(?i)discord
+  - PROCESS-NAME-REGEX,(?i)vesktop
+  - PROCESS-NAME-REGEX,(?i)armcord
+  - PROCESS-NAME-REGEX,(?i)legcord
+  - PROCESS-NAME-REGEX,(?i)webcord
+  - PROCESS-NAME-REGEX,(?i)dorion
+  - PROCESS-NAME-REGEX,(?i)goofcord
+  - PROCESS-NAME-REGEX,(?i)abaddon
+  - PROCESS-NAME,com.discord
