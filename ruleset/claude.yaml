@@ -1,0 +1,11 @@
+payload:
+  # Claude AI
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,intercom.io
+  - DOMAIN,static.intercomassets.com
+  - DOMAIN,downloads.intercomcdn.com
+  - DOMAIN,js.intercomcdn.com
+  - DOMAIN,anthropic.gallerycdn.vsassets.io
