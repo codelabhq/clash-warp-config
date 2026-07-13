@@ -50,6 +50,12 @@
   { "rule": "DOMAIN-KEYWORD,notion,Геоблок" },
   { "rule": "DOMAIN-SUFFIX,ntc.party,PROXY" },
 
+  { "comment": "=== СЛУЖЕБНЫЙ ТРАФИК GOOGLE И CHROME ===" },
+  { "rule": "DOMAIN-SUFFIX,googleapis.com,DIRECT" },
+  { "rule": "DOMAIN-SUFFIX,gstatic.com,DIRECT" },
+  { "rule": "DOMAIN-SUFFIX,google.com,DIRECT" },
+  { "rule": "DOMAIN-KEYWORD,chrome,DIRECT" },
+
   { "comment": "Вручную направляем Activision и матчмейкинг через нужный прокси" },
   { "rule": "DOMAIN-SUFFIX,activision.com,Игры" },
   { "rule": "DOMAIN-SUFFIX,callofduty.com,Игры" },
