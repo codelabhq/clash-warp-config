@@ -69,6 +69,6 @@
   { "rule": "RULE-SET,HODCA,PROXY" },
 
   { "comment": "=== ВСЁ ОСТАЛЬНОЕ ===" },
-  { "rule": "RULE-SET,discord-ip,Discord" },
+  { "rule": "AND,((NETWORK,udp),(RULE-SET,discord-ip)),Discord" },
   { "rule": "MATCH,Все остальное" }
 ]
