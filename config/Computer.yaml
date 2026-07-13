@@ -1029,6 +1029,6 @@ rules:
   - RULE-SET,HODCA,PROXY
 
   # === ВСЁ ОСТАЛЬНОЕ ===
-  - RULE-SET,discord-ip,Discord
+  - AND,((NETWORK,udp),(RULE-SET,discord-ip)),Discord
   - MATCH,Все остальное
 # === END RULES ===
