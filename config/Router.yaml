@@ -597,6 +597,12 @@ rules:
   - DOMAIN-KEYWORD,notion,Геоблок
   - DOMAIN-SUFFIX,ntc.party,PROXY
 
+  # === СЛУЖЕБНЫЙ ТРАФИК GOOGLE И CHROME ===
+  - DOMAIN-SUFFIX,googleapis.com,DIRECT
+  - DOMAIN-SUFFIX,gstatic.com,DIRECT
+  - DOMAIN-SUFFIX,google.com,DIRECT
+  - DOMAIN-KEYWORD,chrome,DIRECT
+
   # Вручную направляем Activision и матчмейкинг через нужный прокси
   - DOMAIN-SUFFIX,activision.com,Игры
   - DOMAIN-SUFFIX,callofduty.com,Игры
