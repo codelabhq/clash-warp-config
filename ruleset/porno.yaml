@@ -41,4 +41,5 @@ payload:
   # chaturbate.com
   - DOMAIN-SUFFIX,chaturbate.com
   - DOMAIN,web2.static.mmcdn.com
+  - DOMAIN,web.static.mmcdn.com
   - DOMAIN,thumb.live.mmcdn.com
