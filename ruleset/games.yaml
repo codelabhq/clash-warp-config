@@ -1,0 +1,10 @@
+payload:
+  # chess.com
+  - DOMAIN,chess.com
+  - DOMAIN,chesscomfiles.com
+  # itch.io
+  - DOMAIN,itch.io
+  - DOMAIN,itch.zone
+  # modrinth.com
+  - DOMAIN,modrinth.com
+  - DOMAIN,modrinth.gg

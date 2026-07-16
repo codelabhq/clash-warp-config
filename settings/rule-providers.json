@@ -91,6 +91,12 @@
     "path": "./ruleset/music.yaml"
   },
   {
+    "name": "games",
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/games.yaml",
+    "path": "./ruleset/games.yaml"
+  },
+  {
     "name": "Steam",
     "behavior": "domain",
     "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Steam/Steam.yaml",

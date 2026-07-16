@@ -41,6 +41,7 @@
   { "rule": "RULE-SET,tools,Геоблок" },
   { "rule": "RULE-SET,socials,Геоблок" },
   { "rule": "RULE-SET,music,Геоблок" },
+  { "rule": "RULE-SET,games,Геоблок" },
   
   { "rule": "RULE-SET,Ubisoft,Игры" },
   { "rule": "RULE-SET,EA,Игры" },
