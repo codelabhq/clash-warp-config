@@ -331,6 +331,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/music.yaml
     path: ./ruleset/music.yaml
     interval: *default-interval
+  games:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/codelabhq/clash-warp-config/main/ruleset/games.yaml
+    path: ./ruleset/games.yaml
+    interval: *default-interval
   Steam:
     type: http
     behavior: domain
@@ -590,6 +596,7 @@ rules:
   - RULE-SET,tools,Геоблок
   - RULE-SET,socials,Геоблок
   - RULE-SET,music,Геоблок
+  - RULE-SET,games,Геоблок
   - RULE-SET,Ubisoft,Игры
   - RULE-SET,EA,Игры
   - RULE-SET,Blizzard,Игры
