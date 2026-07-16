@@ -139,11 +139,11 @@ proxies:
     port: 4500
   - name: "[🌍] TEL 🇵🇱 Польша"
     <<: *warp-common
-    server: mpl.tribukvy.ltd
+    server: tel.pl.tribukvy.ltd
     port: 4500
   - name: "[🌍] TEL 🇫🇮 Финляндия"
     <<: *warp-common
-    server: mfi.tribukvy.ltd
+    server: tel.fi.tribukvy.ltd
     port: 4500
   # ── origin-endpoint ──
   - name: "[⭐] engage.cloudflareclient.com:4500"
