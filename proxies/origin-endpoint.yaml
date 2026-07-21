@@ -14,7 +14,7 @@ proxies:
   - name: "[⭐] 162.159.192.1:4500"
     <<: *warp-common
     server: 162.159.192.1
-    port: 500
+    port: 4500
   - name: "[⭐] 162.159.192.1:500"
     <<: *warp-common
     server: 162.159.192.1
