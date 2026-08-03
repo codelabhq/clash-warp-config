@@ -104,11 +104,11 @@ proxies:
   - name: "[⭐] 162.159.192.1:4500"
     <<: *warp-common
     server: 162.159.192.1
-    port: 500
+    port: 4500
   - name: "[⭐] (Alt 2) 162.159.192.1:4500"
     <<: *warp-common
     server: 162.159.192.1
-    port: 500
+    port: 4500
     amnezia-wg-option:
       <<: *amnezia-base
       i1: *i1-alt2
