@@ -17,9 +17,15 @@ proxies:
   - name: "[🌍] 🇱🇻 Латвия"
     server: lv.tribukvy.ltd
     port: 4500
+  - name: "[🌍] 🇪🇪 Эстония"
+    server: ee.tribukvy.ltd
+    port: 4500
   - name: "[🌍] TEL 🇵🇱 Польша"
     server: tel.pl.tribukvy.ltd
     port: 4500
   - name: "[🌍] TEL 🇫🇮 Финляндия"
     server: tel.fi.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] TEL 🇺🇸 США"
+    server: tel.de.tribukvy.ltd
     port: 4500
