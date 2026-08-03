@@ -39,6 +39,7 @@ payload:
   - DOMAIN-SUFFIX,xvideos-cdn.com
   - DOMAIN-SUFFIX,xvideos.com
   # chaturbate.com
+  - DOMAIN,ru.chaturbate.com
   - DOMAIN-SUFFIX,chaturbate.com
   - DOMAIN,web2.static.mmcdn.com
   - DOMAIN,web.static.mmcdn.com
