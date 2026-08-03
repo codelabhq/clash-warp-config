@@ -137,6 +137,10 @@ proxies:
     <<: *warp-common
     server: lv.tribukvy.ltd
     port: 4500
+  - name: "[🌍] 🇪🇪 Эстония"
+    <<: *warp-common
+    server: ee.tribukvy.ltd
+    port: 4500
   - name: "[🌍] TEL 🇵🇱 Польша"
     <<: *warp-common
     server: tel.pl.tribukvy.ltd
@@ -144,6 +148,10 @@ proxies:
   - name: "[🌍] TEL 🇫🇮 Финляндия"
     <<: *warp-common
     server: tel.fi.tribukvy.ltd
+    port: 4500
+  - name: "[🌍] TEL 🇺🇸 США"
+    <<: *warp-common
+    server: tel.de.tribukvy.ltd
     port: 4500
   # ── origin-endpoint ──
   - name: "[⭐] engage.cloudflareclient.com:4500"
