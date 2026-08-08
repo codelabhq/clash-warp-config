@@ -26,6 +26,6 @@ proxies:
   - name: "[🌍] TEL 🇫🇮 Финляндия"
     server: tel.fi.tribukvy.ltd
     port: 4500
-  - name: "[🌍] TEL 🇺🇸 США"
+  - name: "[🌍] TEL 🇩🇪 Германия"
     server: tel.de.tribukvy.ltd
     port: 4500
