@@ -153,46 +153,6 @@ proxies:
     <<: *warp-common
     server: tel.de.tribukvy.ltd
     port: 4500
-  - name: "[🌍] 🇳🇱 Нидерланды | masque"
-    <<: *warp-masque
-    server: nl.tribukvy.ltd
-    port: 443
-  - name: "[🌍] 🇵🇱 Польша | masque"
-    <<: *warp-masque
-    server: pl.tribukvy.ltd
-    port: 443
-  - name: "[🌍] 🇷🇺 Россия | masque"
-    <<: *warp-masque
-    server: ru0.tribukvy.ltd
-    port: 443
-  - name: "[🌍] 🇫🇮 Финляндия | masque"
-    <<: *warp-masque
-    server: fi.tribukvy.ltd
-    port: 443
-  - name: "[🌍] 🇩🇪 Германия | masque"
-    <<: *warp-masque
-    server: de.tribukvy.ltd
-    port: 443
-  - name: "[🌍] 🇱🇻 Латвия | masque"
-    <<: *warp-masque
-    server: lv.tribukvy.ltd
-    port: 443
-  - name: "[🌍] 🇪🇪 Эстония | masque"
-    <<: *warp-masque
-    server: ee.tribukvy.ltd
-    port: 443
-  - name: "[🌍] TEL 🇵🇱 Польша | masque"
-    <<: *warp-masque
-    server: tel.pl.tribukvy.ltd
-    port: 443
-  - name: "[🌍] TEL 🇫🇮 Финляндия | masque"
-    <<: *warp-masque
-    server: tel.fi.tribukvy.ltd
-    port: 443
-  - name: "[🌍] TEL 🇩🇪 Германия | masque"
-    <<: *warp-masque
-    server: tel.de.tribukvy.ltd
-    port: 443
   # ── origin-endpoint ──
   - name: "[⭐] engage.cloudflareclient.com:4500"
     <<: *warp-common
