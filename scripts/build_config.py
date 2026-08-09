@@ -85,14 +85,24 @@ def alt_name(name, n):
     return f"{prefix}(Alt {n}) {rest}"
 
 
-def emit_node(lines, marker, node, name_override=None, amnezia=None, variant=None):
+def emit_node(
+    lines,
+    marker,
+    node,
+    name_override=None,
+    amnezia=None,
+    variant=None,
+    merge="warp-common",
+    port_override=None,
+):
     name = name_override if name_override is not None else str(node["name"])
     if not name.startswith("["):
         name = f"[{marker}] {name}"
     lines.append(f"  - name: {quote(name)}")
-    lines.append("    <<: *warp-common")
+    lines.append(f"    <<: *{merge}")
     lines.append(f"    server: {node['server']}")
-    lines.append(f"    port: {node['port']}")
+    port = node["port"] if port_override is None else port_override
+    lines.append(f"    port: {port}")
     for k, v in node.items():
         if k in ("name", "server", "port"):
             continue
@@ -131,6 +141,16 @@ def render_warp(types, amnezia):
                     name_override=alt_name(str(node["name"]), n + 1),
                     amnezia=amnezia,
                     variant=ALT_VARIANTS[n],
+                )
+        if t == "geo":
+            for node in nodes:
+                emit_node(
+                    lines,
+                    marker,
+                    node,
+                    name_override=f"{node['name']} | masque",
+                    merge="warp-masque",
+                    port_override=443,
                 )
     return "\n".join(lines)
 
