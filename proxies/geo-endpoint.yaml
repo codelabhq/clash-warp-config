@@ -29,3 +29,33 @@ proxies:
   - name: "[🌍] TEL 🇩🇪 Германия"
     server: tel.de.tribukvy.ltd
     port: 4500
+  - name: "[🌍] MASQUE 🇳🇱 Нидерланды"
+    server: nl.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE 🇵🇱 Польша"
+    server: pl.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE 🇷🇺 Россия"
+    server: ru0.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE 🇫🇮 Финляндия"
+    server: fi.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE 🇩🇪 Германия"
+    server: de.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE 🇱🇻 Латвия"
+    server: lv.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE 🇪🇪 Эстония"
+    server: ee.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE TEL 🇵🇱 Польша"
+    server: tel.pl.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE TEL 🇫🇮 Финляндия"
+    server: tel.fi.tribukvy.ltd
+    port: 443
+  - name: "[🌍] MASQUE TEL 🇩🇪 Германия"
+    server: tel.de.tribukvy.ltd
+    port: 443
