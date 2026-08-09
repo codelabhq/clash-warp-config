@@ -149,7 +149,7 @@ proxies:
     <<: *warp-common
     server: tel.fi.tribukvy.ltd
     port: 4500
-  - name: "[🌍] TEL 🇺🇸 США"
+  - name: "[🌍] TEL 🇩🇪 Германия"
     <<: *warp-common
     server: tel.de.tribukvy.ltd
     port: 4500
