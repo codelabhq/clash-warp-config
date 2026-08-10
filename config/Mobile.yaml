@@ -180,6 +180,22 @@ proxies:
     <<: *warp-common
     server: 188.114.98.1
     port: 500
+  - name: "[⭐] FRA #1:4500"
+    <<: *warp-common
+    server: 188.114.97.66
+    port: 4500
+  - name: "[⭐] FRA #1:500"
+    <<: *warp-common
+    server: 188.114.97.66
+    port: 500
+  - name: "[⭐] FRA #2:4500"
+    <<: *warp-common
+    server: 188.114.96.125
+    port: 4500
+  - name: "[⭐] FRA #2:500"
+    <<: *warp-common
+    server: 188.114.96.125
+    port: 500
 # === END WARP PROXIES ===
 
 # === BEGIN RULE-PROVIDERS (auto-generated from settings/rule-providers.json — do not edit) ===
