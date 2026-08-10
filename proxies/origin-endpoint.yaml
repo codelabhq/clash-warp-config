@@ -58,3 +58,15 @@ proxies:
   - name: "[⭐] 188.114.98.1:500"
     server: 188.114.98.1
     port: 500
+  - name: "[⭐] FRA #1:4500"
+    server: 188.114.97.66
+    port: 4500
+  - name: "[⭐] FRA #1:500"
+    server: 188.114.97.66
+    port: 500
+  - name: "[⭐] FRA #2:4500"
+    server: 188.114.96.125
+    port: 4500
+  - name: "[⭐] FRA #2:500"
+    server: 188.114.96.125
+    port: 500
