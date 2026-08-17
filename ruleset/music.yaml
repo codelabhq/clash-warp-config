@@ -5,6 +5,7 @@ payload:
   # last.fm
   - DOMAIN,lastfm.freetls.fastly.net
   - DOMAIN-SUFFIX,last.fm
+  - DOMAIN,ws.audioscrobbler.com
   # musicbrainz.org
   - DOMAIN-SUFFIX,metabrainz.org
   - DOMAIN-SUFFIX,musicbrainz.org
