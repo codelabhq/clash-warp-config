@@ -42,6 +42,7 @@ payload:
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN,openai.fund
   - DOMAIN,openai.org
+  - DOMAIN-SUFFIX,chatgpt.site
   # Mobile, Self, Browser (ChatGPT, GitHub)
   - DOMAIN-SUFFIX,events.data.microsoft.com
   # Телеметрия (Perplexity, ChatGPT)
